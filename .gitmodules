@@ -1,0 +1,6 @@
+[submodule "lib/sorted_hash"]
+	path = lib/sorted_hash
+	url = git://github.com/michael/sorted_hash.git
+[submodule "lib/node"]
+	path = lib/node
+	url = git://github.com/michael/node.git
