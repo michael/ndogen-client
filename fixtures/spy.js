@@ -1,4 +1,4 @@
-{
+var spy_fixture = {
   "type": "Document", 
   "children": [
     {
@@ -28,7 +28,7 @@
               "value": "James Bond als popkulturelle Ikone."
             }
           ], 
-          "value": []
+          "value": null
         }
       ], 
       "value": "James Bond", 
@@ -89,7 +89,7 @@
                   "value": "dieses Buch, um sich gegen\u00fcber Jinx (Halle Berry) als Ornithologe auszugeben."
                 }
               ], 
-              "value": []
+              "value": null
             }, 
             {
               "type": "Text", 
@@ -115,7 +115,7 @@
                   "value": "anhand der Filme konzipiert, nicht mehr umgekehrt."
                 }
               ], 
-              "value": []
+              "value": null
             }, 
             {
               "type": "Text", 
@@ -145,7 +145,7 @@
                   "value": "Diese Idee wurde Anfang der 90er von John Peel mit sechs Romanen weitergef\u00fchrt."
                 }
               ], 
-              "value": []
+              "value": null
             }, 
             {
               "type": "Text", 
@@ -183,10 +183,10 @@
                   "value": "Film von 1967 nicht zur offiziellen Bond-Reihe z\u00e4hlt."
                 }
               ], 
-              "value": []
+              "value": null
             }
           ], 
-          "value": []
+          "value": null
         }
       ], 
       "value": "Buch", 
@@ -244,7 +244,7 @@
                   "value": "Filmreihen in der Filmgeschichte."
                 }
               ], 
-              "value": []
+              "value": null
             }, 
             {
               "type": "Text", 
@@ -262,7 +262,7 @@
                   "value": "die Gesch\u00e4fte weiter."
                 }
               ], 
-              "value": []
+              "value": null
             }, 
             {
               "type": "Text", 
@@ -308,7 +308,7 @@
                   "value": "der zuk\u00fcnftigen James-Bond-Filme verhandelt."
                 }
               ], 
-              "value": []
+              "value": null
             }, 
             {
               "type": "Text", 
@@ -338,7 +338,7 @@
                   "value": "2"
                 }
               ], 
-              "value": []
+              "value": null
             }, 
             {
               "type": "Text", 
@@ -356,10 +356,10 @@
                   "value": "errichtet wurden."
                 }
               ], 
-              "value": []
+              "value": null
             }
           ], 
-          "value": []
+          "value": null
         }
       ], 
       "value": "Filme", 
@@ -375,7 +375,7 @@
           "children": [
             {
               "type": "Definition", 
-              "value": []
+              "value": null
             }, 
             {
               "type": "Definition", 
@@ -396,10 +396,10 @@
                   "value": "bei stern.de, 21. April 2010 (aufgerufen am 21. April 2010)"
                 }
               ], 
-              "value": []
+              "value": null
             }
           ], 
-          "value": []
+          "value": null
         }
       ], 
       "value": "Referenzen", 
