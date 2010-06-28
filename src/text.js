@@ -13,7 +13,7 @@ Text.prototype.render = function () {
   
   if (this.all('children')) {
     this.all('children').each(function(index, node) {
-      str += ""+node.render()+"";
+      str += ""+node.render()+" ";
     });    
   }
   

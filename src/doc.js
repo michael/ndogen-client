@@ -22,8 +22,9 @@ var Doc = function (doc) {
 Doc.prototype = Object.extend(Node);
 
 Doc.prototype.render = function () {
-  var str = "<h1>"+this.val+"<h1/>";
   
+  
+  var str = "";
   this.all('children').each(function(index, node) {
     str += node.render();
   });

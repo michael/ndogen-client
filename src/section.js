@@ -4,18 +4,20 @@
 
 var Section = function (node) {
   DocNode.call(this, node);
+  
+  this.level = node.properties.level || 1;
 };
 
 Section.prototype = Object.extend(DocNode);
 
 Section.prototype.render = function () {
-  var str = "<h5>"+this.type+": "+this.val+"</h5><ul>";
+  var str = "<h"+this.level+">"+this.val+"</h"+this.level+">";
   
   if (this.all('children')) {
     this.all('children').each(function(index, node) {
-      str += "<li>"+node.render()+"</li>";
-    });    
+      str += node.render();
+    });
   }
   
-  return str+"</ul>";
+  return str;
 };
