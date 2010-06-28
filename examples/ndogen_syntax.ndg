@@ -1,0 +1,125 @@
+NDOGEN - Natural text markup
+=================================================================
+
+Ndogen exposes documentation as data (JSON) instead of pre-rendered HTML. 
+This approach not only saves some bytes at transmission, it also allows
+clients to individually render the result. Here's a description of the
+syntax (draft).
+
+
+Block Elements
+-----------------------------------------------------------------
+
+Paragraph
+.................................................................
+
+A paragraph is simply one or more consecutive lines of text, separated
+by one or more blank lines. (A blank line is any line that looks like a
+blank line — a line containing nothing but spaces or tabs is considered
+blank.) Normal paragraphs should not be indented with spaces or tabs.
+
+
+Sections
+.................................................................
+
+Sections, inspired by the Setext-style, are “underlined” using equal signs
+(for first-level sections) and dashes (for second-level sections) or dots 
+(third-level sections).
+
+For example:
+
+$ Section 1
+$ =============
+$ 
+$ Section 2
+$ -------------
+$ 
+$ Section 3
+$ .............
+
+
+Unordered Lists
+.................................................................
+
+Ndogen supports nested lists and hanging indents.
+
+$  * Red
+$  * Green
+$    Additional Line
+$    * Dark Green
+$    * Light Green
+$  * Blue
+
+
+Ordered Lists
+.................................................................
+
+$  # Red
+$  # Green
+$    Additional Line
+$    # Dark Green
+$    # Light Green
+$  # Blue
+
+
+Code Blocks
+.................................................................
+
+Use preceded $-signs to denote code blocks.
+
+$ $ $(function() {
+$ $   ndogen.run();
+$ $ });
+
+
+Topics
+.................................................................
+
+$  A Topic:
+$  
+$  A subsequent paragraph,
+$  with some text
+
+
+Definitions
+.................................................................
+
+$  First definition:    The value can be a paragraph
+$                       or any other element.
+$
+$  Second definition:   * Item 1
+$                       * Item 2
+
+
+Span Elements
+-----------------------------------------------------------------
+
+
+Links
+.................................................................
+
+Links are ready to be used inline. Links can be references to local
+anchors or external resources.
+
+$ An external Link[http://quasipartikel.at]. To wrap more than one word in a link
+$ you have to use quotes. "See here"[http://github.com/oliver----/ndogen]
+$ 
+$ This is a references to a local anchor [SomeAnchor]
+
+
+Emphasized text
+.................................................................
+
+$ _Single underscores_ or *single asterisks*
+
+
+Strong text
+.................................................................
+
+$ _Double underscores_ or *double asterisks*
+
+
+Inline Code
+.................................................................
+
+You can create an instance with `new Person()`

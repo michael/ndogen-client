@@ -1,0 +1,12 @@
+Syntax Discussion:
+
+  * Links should always be defined in one place and only referenced from inline text?
+    Like markdown
+    
+    [1]: http://google.com/        "Google"
+    [2]: http://search.yahoo.com/  "Yahoo Search"
+    [3]: http://search.msn.com/    "MSN Search"
+    
+  * List Class necessary? Because list items need a wrapping <ul> Element
+  * Images?
+  
