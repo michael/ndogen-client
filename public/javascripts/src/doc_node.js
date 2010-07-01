@@ -31,6 +31,7 @@ DocNode.create = function(node) {
     case 'ListItem': result = new ListItem(node); break;
     case 'Paragraph': result = new Paragraph(node); break;
     case 'Text': result = new Text(node); break;
+    case 'Code': result = new Code(node); break;
     case 'Definition': result = new Definition(node); break;
     case 'Link': result = new Link(node); break;
     case 'Anchor': result = new Anchor(node); break;

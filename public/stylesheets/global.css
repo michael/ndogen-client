@@ -1,0 +1,47 @@
+/*
+-----------------------------------------
+ Common
+-----------------------------------------
+*/
+
+/* Newspaper Color: #FFF5EC */
+
+body { background: #eee; margin: 0; padding: 0px; color: #252519; font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, FreeSerif, serif; }
+a { color: #252519; }
+a:hover { text-decoration: underline; color: #19469D; }
+
+#content {
+  background: #fff;
+  padding: 20px;
+  position: absolute;
+  left: 200px;
+  right: 200px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+code {
+  display: block;
+  margin-top: 29px;
+  padding: 20px;
+  border: 1px dotted #ccc;
+  background: #eee;
+}
+
+
+/*
+-----------------------------------------
+ Head up display
+-----------------------------------------
+*/
+
+#hud {
+  position: fixed; top: 40px; left: 40px; bottom: 40px; right: 40px; background: black; 
+  -moz-border-radius: 15px; -webkit-border-radius: 15px;
+  opacity: 0.8;
+  color: white;
+  padding: 20px;
+  display: none;
+}
+
+#hud a { color: white; }

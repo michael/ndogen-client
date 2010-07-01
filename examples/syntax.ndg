@@ -7,6 +7,7 @@ clients to individually render the result. Here's a description of the
 syntax (draft).
 
 
+
 Block Elements
 -----------------------------------------------------------------
 
@@ -122,4 +123,4 @@ $ _Double underscores_ or *double asterisks*
 Inline Code
 .................................................................
 
-You can create an instance with `new Person()`
+$ You can create an instance with `new Person()`
