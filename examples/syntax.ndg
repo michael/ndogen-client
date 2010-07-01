@@ -3,9 +3,7 @@ NDOGEN - Natural text markup
 
 Ndogen exposes documentation as data (JSON) instead of pre-rendered HTML. 
 This approach not only saves some bytes at transmission, it also allows
-clients to individually render the result. Here's a description of the
-syntax (draft).
-
+clients to individually render the result. 
 
 
 Block Elements
@@ -15,9 +13,8 @@ Paragraph
 .................................................................
 
 A paragraph is simply one or more consecutive lines of text, separated
-by one or more blank lines. (A blank line is any line that looks like a
-blank line — a line containing nothing but spaces or tabs is considered
-blank.) Normal paragraphs should not be indented with spaces or tabs.
+by one or more blank lines. Normal paragraphs should not be indented with
+spaces or tabs.
 
 
 Sections
@@ -102,8 +99,9 @@ Links
 Links are ready to be used inline. Links can be references to local
 anchors or external resources.
 
-$ An external Link[http://quasipartikel.at]. To wrap more than one word in a link
-$ you have to use quotes. "See here"[http://github.com/oliver----/ndogen]
+$ An external Link[http://quasipartikel.at].
+$ For more than one word as the link name you have to use quotes. 
+$ "See here"[http://github.com/oliver----/ndogen]
 $ 
 $ This is a references to a local anchor [SomeAnchor]
 
