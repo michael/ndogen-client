@@ -4,3 +4,6 @@
 [submodule "lib/node"]
 	path = lib/node
 	url = git://github.com/michael/node.git
+[submodule "lib/proto"]
+	path = lib/proto
+	url = git://github.com/creationix/proto.git
