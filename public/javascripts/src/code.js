@@ -10,7 +10,7 @@ Code.prototype = Object.extend(DocNode);
 
 Code.prototype.render = function () {
   
-  var str = "<code>"+this.val+"</code>";
+  var str = "<pre><code>"+this.val+"</code></pre>";
   
   if (this.all('children')) {
     this.all('children').each(function(index, node) {

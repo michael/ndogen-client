@@ -1,20 +1,19 @@
 //-----------------------------------------------------------------------------
-// ListItem
+// List
 //-----------------------------------------------------------------------------
 
-var ListItem = function (node) {
+var List = function (node) {
   DocNode.call(this, node);
 };
 
-ListItem.prototype = Object.extend(DocNode);
+List.prototype = Object.extend(DocNode);
 
-ListItem.prototype.render = function () {
-  var str = "<li>";
-  
+List.prototype.render = function () {
+  var str = "<ul>";
   if (this.all('children')) {
     this.all('children').each(function(index, node) {
       str += node.render();
-    });    
+    });
   }
-  return str+"</li>";
+  return str+"</ul>";
 };

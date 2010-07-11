@@ -3,7 +3,7 @@ NDOGEN - Natural text markup
 
 Ndogen exposes documentation as data (JSON) instead of pre-rendered HTML. 
 This approach not only saves some bytes at transmission, it also allows
-clients to individually render the result. 
+clients to individually render the result.
 
 
 Block Elements

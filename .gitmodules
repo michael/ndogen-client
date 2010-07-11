@@ -7,3 +7,6 @@
 [submodule "lib/proto"]
 	path = lib/proto
 	url = git://github.com/creationix/proto.git
+[submodule "lib/redis-node-client"]
+	path = lib/redis-node-client
+	url = http://github.com/fictorial/redis-node-client.git
