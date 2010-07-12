@@ -21,12 +21,35 @@ var DocNode = function (node) {
 
 DocNode.prototype = Object.extend(Node);
 
-// Factory method that instantiates the corrent node object
+DocNode.prototype.renderSection = function() {
+  var str = '';
+  
+  if (this.type === 'Section') {
+    // str = '<h'+this.level+'>'+this.val+'</h'+this.level+'>';
+    // str = '<h'+this.level+'>'+this.val+'</h'+this.level+'>';
+    // str
+    str += '<li><a href="#section_'+this.sectionId+'">'+this.val+'<ul>';
+  }
+  
+  if (this.all('children')) {
+    this.all('children').each(function(index, node) {
+      str += node.renderSection();
+    });
+  }
+  
+  if (this.type === 'Section') {
+    str += '</ul></li>';
+  }
+  
+  return str;
+};
+
+// Factory method that instantiates the current node object
 DocNode.create = function(node) {
   var result;
   switch (node.type) {
     case 'Section': result = new Section(node); break;
-    case 'Topic': result = new Topic(node); break;
+    case 'Caption': result = new Caption(node); break;
     case 'List': result = new List(node); break;
     case 'ListItem': result = new ListItem(node); break;
     case 'Paragraph': result = new Paragraph(node); break;

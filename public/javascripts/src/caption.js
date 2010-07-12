@@ -1,21 +1,21 @@
 //-----------------------------------------------------------------------------
-// Topic
+// Caption
 //-----------------------------------------------------------------------------
 
-var Topic = function (node) {
+var Caption = function (node) {
   DocNode.call(this, node);
 };
 
-Topic.prototype = Object.extend(DocNode);
+Caption.prototype = Object.extend(DocNode);
 
-Topic.prototype.render = function () {
-  var str = "<h5>"+this.type+": "+this.val+"</h5><ul>";
+Caption.prototype.render = function () {
+  var str = "<h5>"+this.val+"</h5>";
   
   if (this.all('children')) {
     this.all('children').each(function(index, node) {
-      str += "<li>"+node.render()+"</li>";
-    });    
+      str += node.render();
+    });
   }
   
-  return str+"</ul>";
+  return str;
 };

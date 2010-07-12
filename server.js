@@ -7,11 +7,10 @@ var sys = require('sys'),
 // Data (will be backed by Redis soon)
 // ============================================================================
 
-var documents = [
-  { name: 'Unveil.js', host: 'localhost', port: 50000, path: '/get_resource/?uri=index' },
-  { name: 'Ndogen Syntax', host: 'localhost', port: 50000, path: '/get_resource/?uri=examples.syntax' },
-  { name: 'Test', host: 'ma.zive.at', path: '/json/turnover.json' }
-];
+var documents = {
+  'unveil': { name: 'Unveil.js', descr: 'Data driven visualization toolkit', host: 'localhost', port: 50000, path: '/index' },
+  'ndogen': { name: 'Ndogen', descr: 'Ndogen Syntax Documentation', host: 'localhost', port: 50000, path: '/examples.syntax' }
+};
 
 
 // Documents
@@ -24,7 +23,8 @@ function document(app) {
   
   app.get('/', function(req, res, params){
       var body;
-      body = JSON.stringify(documents);      
+      
+      body = JSON.stringify(documents);
 
       res.writeHead(200, {
           'Content-Type': 'text/plain',
@@ -35,10 +35,13 @@ function document(app) {
   
   // Show
   // --------------------------------------------------------------------------
-  app.get('/:id/:op?', function(req, res, params) {          
-      var host = documents[params.id-1].host,
-          port = documents[params.id-1].port || 80,
-          path = documents[params.id-1].path;
+  app.get('/:id/:op?', function(req, res, params) {
+      if (!documents[params.id])
+        return;
+    
+      var host = documents[params.id].host,
+          port = documents[params.id].port || 80,
+          path = documents[params.id].path;
       
       // document knowledge is in the cloud
       var service = http.createClient(port, host);

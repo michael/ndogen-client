@@ -2,7 +2,7 @@
 
 body {
   font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, FreeSerif, serif; background: #f5f5ff;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   color: #252519;
   margin: 0; padding: 0;
@@ -29,14 +29,36 @@ h3, h4, h5, h6 {
 }
 
 
+
 #content {
   background: #fff;
   padding: 20px;
-  position: absolute;
-  left: 200px;
-  right: 200px;
+  margin-left: 300px;
+  margin-right: 20px;
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+
+#footer {
+  padding: 5px;
+  margin-left: 300px;
+  margin-right: 20px;
+  text-align: right;
+  font-size: 12px;
+}
+
+
+#toc {
+  position: fixed;
+  width: 290px;
+  padding: 10px;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  overflow: auto;
+  font-size: 12px;
 }
 
 code {
@@ -44,13 +66,22 @@ code {
   font-family: Monaco, Consolas;
   font-size: 12px;
   margin-top: 29px;
-  padding: 20px;
-  border: 1px dotted #ccc;
-/*  background: #f5f5ff;*/
-  background: #f9f9f9;
-  
+  padding: 7px;
+  border-left: 3px solid #ccc;
+/*  background: #f9f9f9;*/
 }
 
+
+/*--------------------- List documents ----------------------------*/
+
+div.documents { overflow: auto; margin-top: 30px; }
+div.documents div.document { position: relative; padding: 5px; float: left; width: 170px; height: 200px; border: 1px dotted #ccc; margin-right: 20px; margin-bottom: 20px;}
+div.documents div.document h5 { font-size: 17px;}
+div.documents div.document .descr { font-size: 12px; font-style: italic;}
+div.documents div.document .meta { position: absolute; bottom: 0px;  color: #888; height: 30px; font-size: 13px; }
+
+
+/*position: absolute; bottom: 0px; left: 0px; height: 20px; background: 'green'; */
 /* Newspaper Color: #FFF5EC */
 
 

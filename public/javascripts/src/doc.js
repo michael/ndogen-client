@@ -21,9 +21,18 @@ var Doc = function (doc) {
 
 Doc.prototype = Object.extend(Node);
 
+Doc.prototype.renderSection = function() {
+  var str = '<h4>Table of contents</h4><ul>';
+  if (this.all('children')) {
+    this.all('children').each(function(index, node) {
+      str += node.renderSection();
+    });
+  }
+  str += '</ul>';
+  return str;
+};
+
 Doc.prototype.render = function () {
-  
-  
   var str = "";
   this.all('children').each(function(index, node) {
     str += node.render();

@@ -5,8 +5,12 @@
   
   <!-- libraries -->
   <script src="javascripts/lib/jquery-1.4.2.js"></script>
+  <script src="javascripts/lib/underscore.js"></script>
+  
   
   <script src="javascripts/lib/jquery.hotkeys.js"></script>
+  <script src="javascripts/lib/jquery.scrollto.js"></script>
+  
   <script src="javascripts/lib/sammy/sammy.js"></script>
   <script src="javascripts/lib/sammy/plugins/sammy.mustache.js"></script>
   <script src="javascripts/lib/sammy/plugins/sammy.json.js"></script>
@@ -35,7 +39,7 @@
   <script src="javascripts/src/section.js"></script>
   <script src="javascripts/src/text.js"></script>
   <script src="javascripts/src/code.js"></script>
-  <script src="javascripts/src/topic.js"></script>
+  <script src="javascripts/src/caption.js"></script>
   <script src="javascripts/src/doc.js"></script>
   <script src="javascripts/src/ndogen.js"></script>
     
@@ -43,9 +47,16 @@
   <link href="stylesheets/global.css" media="screen" rel="stylesheet" type="text/css" />
 </head>
 <body>  
-  <section id="content">
+  <div id="content"></div>
+  
+  
+  <div id="footer">
+    Documentation by <a href="http://github.com/oliver----/ndogen">Ndogen</a>
+  </div>
+  
+  <div id="toc">
     
-  </section>
+  </div>
   
   <div id="hud">
     <h1>Contents</h1>
