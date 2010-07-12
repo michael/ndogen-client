@@ -8,11 +8,14 @@ var ndogen = $.sammy(function() {
 
   this.get('', function(ctx) {
     // TODO: make dynamic
-    $.getJSON('/documents/1', function(doc) {
-      app.doc = new Doc(doc);
-      $('#content').html(app.doc.render());
-      
-    });
+    // $.getJSON('/documents/1', function(doc) {
+    //   app.doc = new Doc(doc);
+    //   $('#content').html(app.doc.render());
+    //   
+    // });
+    
+    app.doc = new Doc(unveil_fixture);
+    $('#content').html(app.doc.render());
   });
   
   //-----------------------------------------------------------------------------
