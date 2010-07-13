@@ -9,7 +9,7 @@ var Caption = function (node) {
 Caption.prototype = Object.extend(DocNode);
 
 Caption.prototype.render = function () {
-  var str = "<h5>"+this.val+"</h5>";
+  var str = "<h4>"+this.val+"</h4>";
   
   if (this.all('children')) {
     this.all('children').each(function(index, node) {

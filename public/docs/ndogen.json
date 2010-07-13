@@ -1,0 +1,274 @@
+{
+  "type": "Document", 
+  "children": [
+    {
+      "type": "Section", 
+      "children": [
+        {
+          "type": "Paragraph", 
+          "children": [
+            {
+              "type": "Text", 
+              "value": "Ndogen exposes documentation as data (JSON) instead of pre-rendered HTML. This approach not only saves some bytes at transmission, it also allows clients to individually render the result."
+            }
+          ], 
+          "value": null
+        }
+      ], 
+      "value": "NDOGEN - Natural text markup", 
+      "properties": {
+        "level": 1
+      }
+    }, 
+    {
+      "type": "Section", 
+      "children": [
+        {
+          "type": "Section", 
+          "children": [
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "Text", 
+                  "value": "A paragraph is simply one or more consecutive lines of text, separated by one or more blank lines. Normal paragraphs should not be indented with spaces or tabs."
+                }
+              ], 
+              "value": null
+            }
+          ], 
+          "value": "Paragraph", 
+          "properties": {
+            "level": 2
+          }
+        }, 
+        {
+          "type": "Section", 
+          "children": [
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "Text", 
+                  "value": "Sections, inspired by the Setext-style, are \u201cunderlined\u201d using equal signs (for first-level sections) and dashes (for second-level sections) or dots (third-level sections)."
+                }, 
+                {
+                  "type": "Caption", 
+                  "children": [
+                    {
+                      "type": "Code", 
+                      "value": " Section 1\n =============\n \n Section 2\n -------------\n \n Section 3\n ............."
+                    }
+                  ], 
+                  "value": "For example"
+                }
+              ], 
+              "value": null
+            }
+          ], 
+          "value": "Sections", 
+          "properties": {
+            "level": 2
+          }
+        }, 
+        {
+          "type": "Section", 
+          "children": [
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "Text", 
+                  "value": "Ndogen supports nested lists and hanging indents."
+                }, 
+                {
+                  "type": "Code", 
+                  "value": "  * Red\n  * Green\n    Additional Line\n    * Dark Green\n    * Light Green\n  * Blue"
+                }
+              ], 
+              "value": null
+            }
+          ], 
+          "value": "Unordered Lists", 
+          "properties": {
+            "level": 2
+          }
+        }, 
+        {
+          "type": "Section", 
+          "children": [
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "Code", 
+                  "value": "  # Red\n  # Green\n    Additional Line\n    # Dark Green\n    # Light Green\n  # Blue"
+                }
+              ], 
+              "value": null
+            }
+          ], 
+          "value": "Ordered Lists", 
+          "properties": {
+            "level": 2
+          }
+        }, 
+        {
+          "type": "Section", 
+          "children": [
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "Text", 
+                  "value": "Use preceded $-signs to denote code blocks."
+                }, 
+                {
+                  "type": "Code", 
+                  "value": " $ $(function() {\n $   ndogen.run();\n $ });"
+                }
+              ], 
+              "value": null
+            }
+          ], 
+          "value": "Code Blocks", 
+          "properties": {
+            "level": 2
+          }
+        }, 
+        {
+          "type": "Section", 
+          "children": [
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "Code", 
+                  "value": "  A Topic:\n  \n  A subsequent paragraph,\n  with some text"
+                }
+              ], 
+              "value": null
+            }
+          ], 
+          "value": "Topics", 
+          "properties": {
+            "level": 2
+          }
+        }, 
+        {
+          "type": "Section", 
+          "children": [
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "Code", 
+                  "value": "  First definition:    The value can be a paragraph\n                       or any other element.\n\n  Second definition:   * Item 1\n                       * Item 2"
+                }
+              ], 
+              "value": null
+            }
+          ], 
+          "value": "Definitions", 
+          "properties": {
+            "level": 2
+          }
+        }
+      ], 
+      "value": "Block Elements", 
+      "properties": {
+        "level": 1
+      }
+    }, 
+    {
+      "type": "Section", 
+      "children": [
+        {
+          "type": "Section", 
+          "children": [
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "Text", 
+                  "value": "Links are ready to be used inline. Links can be references to local anchors or external resources."
+                }, 
+                {
+                  "type": "Code", 
+                  "value": " An external Link[http://quasipartikel.at].\n For more than one word as the link name you have to use quotes. \n \"See here\"[http://github.com/oliver----/ndogen]\n \n This is a references to a local anchor [SomeAnchor]"
+                }
+              ], 
+              "value": null
+            }
+          ], 
+          "value": "Links", 
+          "properties": {
+            "level": 2
+          }
+        }, 
+        {
+          "type": "Section", 
+          "children": [
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "Code", 
+                  "value": " _Single underscores_ or *single asterisks*"
+                }
+              ], 
+              "value": null
+            }
+          ], 
+          "value": "Emphasized text", 
+          "properties": {
+            "level": 2
+          }
+        }, 
+        {
+          "type": "Section", 
+          "children": [
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "Code", 
+                  "value": " _Double underscores_ or *double asterisks*"
+                }
+              ], 
+              "value": null
+            }
+          ], 
+          "value": "Strong text", 
+          "properties": {
+            "level": 2
+          }
+        }, 
+        {
+          "type": "Section", 
+          "children": [
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "Code", 
+                  "value": " You can create an instance with `new Person()`"
+                }
+              ], 
+              "value": null
+            }
+          ], 
+          "value": "Inline Code", 
+          "properties": {
+            "level": 2
+          }
+        }
+      ], 
+      "value": "Span Elements", 
+      "properties": {
+        "level": 1
+      }
+    }
+  ], 
+  "value": null
+}

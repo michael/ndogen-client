@@ -3,18 +3,6 @@ var ndogen = $.sammy(function() {
   this.use(Sammy.Mustache);
   this.use(Sammy.JSON);
 
-  // this.before(function() {
-  //   // load the items
-  //   var context = this;
-  //   $.ajax({
-  //     url: 'templates.json', 
-  //     dataType: 'json',
-  //     async: false,
-  //     success: function(templates) {
-  //       app.templates = templates;
-  //     }
-  //   });
-  // });
 
   // List Documents
   //-----------------------------------------------------------------------------
@@ -26,7 +14,7 @@ var ndogen = $.sammy(function() {
         html += '<div class="document"> \
                    <h5><a href="/#/'+key+'">'+doc.name+'</a></h5> \
                    <div class="descr">'+doc.descr+'</div> \
-                   <div class="meta">12 sections, 270 words</div> \
+                   <div class="meta">X sections, Y words</div> \
                  </div>';
       });
       html += '</div>';
@@ -66,4 +54,15 @@ var ndogen = $.sammy(function() {
 
 $(function() {
   ndogen.run();
+    
+  // $('#navigation').mouseover(function() {
+  //   $('#toc').fadeIn('fast');
+  //   // $('#toc').show();
+  // });
+  // 
+  // $('#content').mouseover(function() {
+  //   $('#toc').fadeOut('fast');
+  //   // $('#toc').hide();
+  // });
+  
 });

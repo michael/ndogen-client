@@ -1,4 +1,8 @@
-/*--------------------- Layout and Typography ----------------------------*/
+/*
+-----------------------------------------
+ Layout and typography
+-----------------------------------------
+*/
 
 body {
   font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, FreeSerif, serif; background: #f5f5ff;
@@ -8,82 +12,83 @@ body {
   margin: 0; padding: 0;
 }
 
-a {
-  color: #261a3b;
-}
+/* Newspaper Color: #FFF5EC */
 
-a:visited {
-  color: #261a3b;
-}
-  
-p {
-  margin: 0 0 15px 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 40px 0 15px 0;
-}
-
-h3, h4, h5, h6 {
-  margin-top: 20px;
-}
-
+a { color: #252519; }
+a:hover { text-decoration: underline; color: #19469D; }
+a:visited { color: #261a3b; }
+p { margin: 0 0 15px 0; }
+h1, h2, h3, h4, h5, h6 {  margin: 40px 0 15px 0; }
+h3, h4, h5, h6 { margin-top: 20px; }
 
 
 #content {
   background: #fff;
-  padding: 20px;
-  margin-left: 300px;
-  margin-right: 20px;
+  padding: 30px;
+  padding-top: 1px;
+  margin-left: 250px;
+  margin-right: 250px;
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
 }
 
-
 #footer {
   padding: 5px;
-  margin-left: 300px;
-  margin-right: 20px;
+  margin-left: 250px;
+  margin-right: 250px;
   text-align: right;
   font-size: 12px;
 }
 
-
-#toc {
-  position: fixed;
-  width: 290px;
+#navigation {
+  position: absolute;
+  width: 250px;
   padding: 10px;
   left: 0px;
   top: 0px;
-  bottom: 0px;
-  overflow: auto;
-  font-size: 12px;
 }
+
+#navigation h3 {font-size: 19px; margin: 0; padding: 0; margin-top: 30px;}
+
+/* font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, FreeSerif, serif;*/
+#navigation #toc {
+  font-size: 12px;
+  color: #485873;
+  padding: 5px;
+/*  font-family: 'Georgia', 'Helvetica Neue', Helvetica, Arial;*/
+  font-style: italic;
+}
+
+#navigation #toc ol { padding-left: 15px; margin-left: 0px; }
+
+#navigation #toc li { /* list-style: square; */}
+#navigation #toc li a { color: #485873; text-decoration: none; }
+#navigation #toc li a:hover { color: #000; }
+
+
+/*#navigation #toc { display: none;}*/
 
 code {
   display: block;
   font-family: Monaco, Consolas;
   font-size: 12px;
-  margin-top: 29px;
+  margin-top: 15px;
   padding: 7px;
   border-left: 3px solid #ccc;
-/*  background: #f9f9f9;*/
 }
 
-
-/*--------------------- List documents ----------------------------*/
+/*
+-----------------------------------------
+ List documents
+-----------------------------------------
+*/
 
 div.documents { overflow: auto; margin-top: 30px; }
 div.documents div.document { position: relative; padding: 5px; float: left; width: 170px; height: 200px; border: 1px dotted #ccc; margin-right: 20px; margin-bottom: 20px;}
 div.documents div.document h5 { font-size: 17px;}
 div.documents div.document .descr { font-size: 12px; font-style: italic;}
 div.documents div.document .meta { position: absolute; bottom: 0px;  color: #888; height: 30px; font-size: 13px; }
-
-
-/*position: absolute; bottom: 0px; left: 0px; height: 20px; background: 'green'; */
-/* Newspaper Color: #FFF5EC */
-
 
 
 /*
@@ -102,8 +107,6 @@ div.documents div.document .meta { position: absolute; bottom: 0px;  color: #888
 }
 
 #hud a { color: white; }
-
-
 
 /*---------------------- Syntax Highlighting -----------------------------*/
 td.linenos { background-color: #f0f0f0; padding-right: 10px; }

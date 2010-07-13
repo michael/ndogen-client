@@ -24,11 +24,11 @@ DocNode.prototype = Object.extend(Node);
 DocNode.prototype.renderSection = function() {
   var str = '';
   
-  if (this.type === 'Section') {
+  if (this.type === 'Section' && this.level < 3) {
     // str = '<h'+this.level+'>'+this.val+'</h'+this.level+'>';
     // str = '<h'+this.level+'>'+this.val+'</h'+this.level+'>';
     // str
-    str += '<li><a href="#section_'+this.sectionId+'">'+this.val+'<ul>';
+    str += '<li><a href="#section_'+this.sectionId+'">'+this.val+'<ol>';
   }
   
   if (this.all('children')) {
@@ -37,8 +37,8 @@ DocNode.prototype.renderSection = function() {
     });
   }
   
-  if (this.type === 'Section') {
-    str += '</ul></li>';
+  if (this.type === 'Section' && this.level < 3) {
+    str += '</ol></li>';
   }
   
   return str;
