@@ -12,8 +12,31 @@
               "value": "Unveil is a data exploration and visualization toolkit that utilizes data-driven software design. It features several modules."
             }, 
             {
-              "type": "Text", 
-              "value": "This documentation is generated on the fly using the ndogen documentation generator. Since this instant doc-generation part is under heavy development, you'll experience some glitches. We're working on it!"
+              "type": "Caption", 
+              "children": [
+                {
+                  "type": "Text", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "This documentation is generated on the fly using the ndogen documentation generator. Since this instant doc-generation part is under heavy development, you'll experience some glitches. We're working on it! Have a look at the markup"
+                    }, 
+                    {
+                      "type": "Link", 
+                      "properties": {
+                        "alias": "http://github.com/michael/unveil/blob/master/index.ndg"
+                      }, 
+                      "value": "http://github.com/michael/unveil/blob/master/index.ndg"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": " too, to view this documentation on a raw-level. ;-)"
+                    }
+                  ], 
+                  "value": null
+                }
+              ], 
+              "value": "Documentation"
             }
           ], 
           "value": null
@@ -329,7 +352,7 @@
               "children": [
                 {
                   "type": "Text", 
-                  "value": "All you have to do is to assign a new property on the pv.Collection.transformers property, which holds a transformer function. This function takes an input collection and a params hash."
+                  "value": "All you have to do is to assign a new property on the pv.Collection.transformers object, which holds a transformer function. This function takes an input collection and a params hash."
                 }, 
                 {
                   "type": "Code", 
@@ -337,7 +360,24 @@
                 }, 
                 {
                   "type": "Text", 
-                  "value": "See the implementation of the group transformation, to see how it's done."
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "See the implementation of the "
+                    }, 
+                    {
+                      "type": "Link", 
+                      "properties": {
+                        "alias": "GROUPT"
+                      }, 
+                      "value": "GROUPT"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": ", to see how it's done."
+                    }
+                  ], 
+                  "value": null
                 }, 
                 {
                   "type": "Caption", 
@@ -720,7 +760,7 @@
           }
         }
       ], 
-      "value": "Node                                                                     ", 
+      "value": "Node API                                                                 ", 
       "properties": {
         "anchor": "NODE", 
         "level": 1
@@ -1049,6 +1089,23 @@
                                             }
                                           ], 
                                           "value": null
+                                        }, 
+                                        {
+                                          "type": "Text", 
+                                          "children": [
+                                            {
+                                              "type": "Text", 
+                                              "value": "GROUPT:        "
+                                            }, 
+                                            {
+                                              "type": "Link", 
+                                              "properties": {
+                                                "alias": "Group Transformer"
+                                              }, 
+                                              "value": "http://github.com/michael/unveil/blob/master/src/collection/transformers/group.js"
+                                            }
+                                          ], 
+                                          "value": null
                                         }
                                       ], 
                                       "value": "Method chaining"
@@ -1078,7 +1135,7 @@
           }
         }
       ], 
-      "value": "Sorted Hash                                                        ", 
+      "value": "Sorted Hash API                                                    ", 
       "properties": {
         "anchor": "SORTEDHASH", 
         "level": 1
