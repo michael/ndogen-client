@@ -8,35 +8,57 @@
           "type": "Paragraph", 
           "children": [
             {
-              "type": "Text", 
-              "value": "Unveil is a data exploration and visualization toolkit that utilizes data-driven software design. It features several modules."
-            }, 
-            {
-              "type": "Caption", 
+              "type": "TextBlock", 
               "children": [
                 {
                   "type": "Text", 
-                  "children": [
-                    {
-                      "type": "Text", 
-                      "value": "This documentation is generated on the fly using the ndogen documentation generator. Since this instant doc-generation part is under heavy development, you'll experience some glitches. We're working on it! Have a look at the markup"
-                    }, 
-                    {
-                      "type": "Link", 
-                      "properties": {
-                        "alias": "http://github.com/michael/unveil/blob/master/index.ndg"
-                      }, 
-                      "value": "http://github.com/michael/unveil/blob/master/index.ndg"
-                    }, 
-                    {
-                      "type": "Text", 
-                      "value": " too, to view this documentation on a raw-level. ;-)"
-                    }
-                  ], 
-                  "value": null
+                  "value": "Unveil is a data exploration and visualization toolkit that utilizes data-driven software design. It features several modules."
                 }
               ], 
-              "value": "Documentation"
+              "value": null
+            }
+          ], 
+          "value": null
+        }, 
+        {
+          "type": "Paragraph", 
+          "children": [
+            {
+              "type": "TextBlock", 
+              "children": [
+                {
+                  "type": "Text", 
+                  "value": "Documentation:"
+                }
+              ], 
+              "value": null
+            }
+          ], 
+          "value": null
+        }, 
+        {
+          "type": "Paragraph", 
+          "children": [
+            {
+              "type": "TextBlock", 
+              "children": [
+                {
+                  "type": "Text", 
+                  "value": "This documentation is generated on the fly using the ndogen documentation generator. Since this instant doc-generation part is under heavy development, you'll experience some glitches. We're working on it! Have a look at the "
+                }, 
+                {
+                  "type": "Link", 
+                  "properties": {
+                    "alias": "markup"
+                  }, 
+                  "value": "http://github.com/michael/unveil/blob/master/index.ndg"
+                }, 
+                {
+                  "type": "Text", 
+                  "value": " too, to view this documentation on a raw-level. ;-)"
+                }
+              ], 
+              "value": null
             }
           ], 
           "value": null
@@ -54,16 +76,46 @@
           "type": "Paragraph", 
           "children": [
             {
-              "type": "Text", 
-              "value": "Collections are the main building block of the toolkit. A Collection is a simple data abstraction format where a data-set under investigation conforms to a collection of data items that describes all facets of the underlying data in a simple and universal way. You can think of a `Collection` as a table of data, except it provides precise information about the data contained (meta-data)."
-            }, 
+              "type": "TextBlock", 
+              "children": [
+                {
+                  "type": "Text", 
+                  "value": "Collections are the main building block of the toolkit. A Collection is a simple data abstraction format where a data-set under investigation conforms to a collection of data items that describes all facets of the underlying data in a simple and universal way. You can think of a `Collection` as a table of data, except it provides precise information about the data contained (meta-data)."
+                }
+              ], 
+              "value": null
+            }
+          ], 
+          "value": null
+        }, 
+        {
+          "type": "Paragraph", 
+          "children": [
             {
-              "type": "Text", 
-              "value": "Collections are represented as a JSON string, which serves as an exchange format. Since JSON is heavily used in web-services, its perfectly suited for usage in a cloud-like scenario. Your collections can be constructed on the fly using live data from web services that either provides data directly in the Collection format or through a translator service that serves as an adapter for an existing service."
-            }, 
+              "type": "TextBlock", 
+              "children": [
+                {
+                  "type": "Text", 
+                  "value": "Collections are represented as a JSON string, which serves as an exchange format. Since JSON is heavily used in web-services, its perfectly suited for usage in a cloud-like scenario. Your collections can be constructed on the fly using live data from web services that either provides data directly in the Collection format or through a translator service that serves as an adapter for an existing service."
+                }
+              ], 
+              "value": null
+            }
+          ], 
+          "value": null
+        }, 
+        {
+          "type": "Paragraph", 
+          "children": [
             {
-              "type": "Text", 
-              "value": "After passing the raw format to the `Collection` constructor, they are internally represented as a network of nodes (a graph so to say), that allows efficient operations on the Collection by traversing the graph instead of iterating over all items, values etc. Also operations like filtering, grouping etc. are already supported."
+              "type": "TextBlock", 
+              "children": [
+                {
+                  "type": "Text", 
+                  "value": "After passing the raw format to the `Collection` constructor, they are internally represented as a network of nodes (a graph so to say), that allows efficient operations on the Collection by traversing the graph instead of iterating over all items, values etc. Also operations like filtering, grouping etc. are already supported."
+                }
+              ], 
+              "value": null
             }
           ], 
           "value": null
@@ -76,18 +128,42 @@
               "children": [
                 {
                   "type": "Code", 
-                  "value": " var countries = new Collection({\n   \"properties\": \"properties\": {\n     \"name\": {\n       \"name\": \"Country Name\",\n       \"type\": \"string\",\n       \"unique\": true\n     },\n     \"official_language\": {\n       \"name\": \"Official language\",\n       \"type\": \"string\",\n       \"unique\": true\n     },\n     \"form_of_government\": {\n       \"name\": \"Form of governmennt\",\n       \"type\": \"string\",\n       \"unique\": false\n     },\n     \"currency_used\": {\n       \"name\": \"Currency used\",\n       \"type\": \"string\",\n       \"unique\": true\n     },\n     \"population\": {\n       \"name\": \"Population\",\n       \"type\": \"number\",\n       \"unique\": true\n     },\n     \"gdp_nominal\": {\n       \"name\": \"GDP nominal\",\n       \"type\": \"number\",\n       \"unique\": true\n     },\n     \"area\": {\n       \"name\": \"Area\",\n       \"type\": \"number\",\n       \"unique\": true\n     },\n     \"date_founded\": {\n       \"name\": \"Date founded\",\n       \"type\": \"date\",\n       \"unqiue\": true\n     }\n   },\n   \"items\": {\n     \"arg\": {\n       \"name\": \"Argentina\",\n       \"official_language\": \"Spanish Language\",\n       \"form_of_government\": [\n         \"Federal republic\",\n         \"Presidential system\"\n       ],\n       \"currency_used\": \"Argentinian Peso\",\n       \"population\": 39745613,\n       \"gdp_nominal\": 338700000000.0,\n       \"area\": 2780403.0,\n       \"date_founded\": \"1816-07-09\"\n     },\n     ...\n   },\n });"
+                  "value": " var countries = new Collection({\n   \"properties\": \"properties\": {\n     \"name\": {\n       \"name\": \"Country Name\",\n       \"type\": \"string\",\n       \"unique\": true\n     },\n     \"official_language\": {\n       \"name\": \"Official language\",\n       \"type\": \"string\",\n       \"unique\": true\n     },\n     \"form_of_government\": {\n       \"name\": \"Form of governmennt\",\n       \"type\": \"string\",\n       \"unique\": false\n     },\n     \"currency_used\": {\n       \"name\": \"Currency used\",\n       \"type\": \"string\",\n       \"unique\": true\n     },\n     \"population\": {\n       \"name\": \"Population\",\n       \"type\": \"number\",\n       \"unique\": true\n     },\n     \"gdp_nominal\": {\n       \"name\": \"GDP nominal\",\n       \"type\": \"number\",\n       \"unique\": true\n     },\n     \"area\": {\n       \"name\": \"Area\",\n       \"type\": \"number\",\n       \"unique\": true\n     },\n     \"date_founded\": {\n       \"name\": \"Date founded\",\n       \"type\": \"date\",\n       \"unqiue\": true\n     }\n   },\n   \"items\": {\n     \"arg\": {\n       \"name\": \"Argentina\",\n       \"official_language\": \"Spanish Language\",\n       \"form_of_government\": [\n         \"Federal republic\",\n         \"Presidential system\"\n       ],\n       \"currency_used\": \"Argentinian Peso\",\n       \"population\": 39745613,\n       \"gdp_nominal\": 338700000000.0,\n       \"area\": 2780403.0,\n       \"date_founded\": \"1816-07-09\"\n     },\n     ...\n   },\n });\n"
                 }, 
                 {
-                  "type": "Text", 
-                  "value": "The Collection constructor takes a collection represented as a JavaScript object, which conforms to a parsed JSON collection string. Once created you can query the information contained."
-                }, 
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "The Collection constructor takes a collection represented as a JavaScript object, which conforms to a parsed JSON collection string. Once created you can query the information contained."
+                    }
+                  ], 
+                  "value": null
+                }
+              ], 
+              "value": null
+            }, 
+            {
+              "type": "Paragraph", 
+              "children": [
                 {
-                  "type": "Text", 
-                  "value": "The API features a simple object model for working with such in-memory collections. The collection object gives you access to the `Properties` and `Items` contained."
-                }, 
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "The API features a simple object model for working with such in-memory collections. The collection object gives you access to the `Properties` and `Items` contained."
+                    }
+                  ], 
+                  "value": null
+                }
+              ], 
+              "value": null
+            }, 
+            {
+              "type": "Paragraph", 
+              "children": [
                 {
-                  "type": "Text", 
+                  "type": "TextBlock", 
                   "children": [
                     {
                       "type": "Text", 
@@ -123,38 +199,62 @@
               "type": "Paragraph", 
               "children": [
                 {
-                  "type": "Text", 
-                  "value": "Meta-data (data about data) is represented as a set of properties that belongs to a collection. A property (cmp. a column in a table) holds a key, a name (cmp. a header of a column) and a type (telling whether the data is numeric or textual, etc.)."
-                }, 
-                {
-                  "type": "Caption", 
+                  "type": "TextBlock", 
                   "children": [
                     {
-                      "type": "Code", 
-                      "value": " var properties = countries.all('properties'); // => SortedHash"
-                    }, 
-                    {
-                      "type": "Caption", 
-                      "children": [
-                        {
-                          "type": "Code", 
-                          "value": " var population = countries.get('properties', 'population');"
-                        }, 
-                        {
-                          "type": "Caption", 
-                          "children": [
-                            {
-                              "type": "Code", 
-                              "value": " population.type; // => 'string'\n population.name; // => 'Population'\n population.unique; // => true"
-                            }
-                          ], 
-                          "value": "And you can use property inspection"
-                        }
-                      ], 
-                      "value": "You can also access them directly"
+                      "type": "Text", 
+                      "value": "Meta-data (data about data) is represented as a set of properties that belongs to a collection. A property (cmp. a column in a table) holds a key, a name (cmp. a header of a column) and a type (telling whether the data is numeric or textual, etc.)."
                     }
                   ], 
-                  "value": "Access the Collection's properties"
+                  "value": null
+                }
+              ], 
+              "value": null
+            }, 
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "Access the Collection's properties:"
+                    }
+                  ], 
+                  "value": null
+                }, 
+                {
+                  "type": "Code", 
+                  "value": " var properties = countries.all('properties'); // => SortedHash\n"
+                }, 
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "You can also access them directly:"
+                    }
+                  ], 
+                  "value": null
+                }, 
+                {
+                  "type": "Code", 
+                  "value": " var population = countries.get('properties', 'population');\n"
+                }, 
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "And you can use property inspection:"
+                    }
+                  ], 
+                  "value": null
+                }, 
+                {
+                  "type": "Code", 
+                  "value": " population.type; // => 'string'\n population.name; // => 'Population'\n population.unique; // => true\n"
                 }
               ], 
               "value": null
@@ -172,58 +272,90 @@
               "type": "Paragraph", 
               "children": [
                 {
-                  "type": "Text", 
-                  "value": "An item of the collection conforms to a row in a data table, except one \u2018cell\u2019 can have arbitrary many values (non-unique attributes)."
-                }, 
-                {
-                  "type": "Caption", 
+                  "type": "TextBlock", 
                   "children": [
                     {
-                      "type": "Code", 
-                      "value": " var items = countries.all('items'); // => SortedHash containing Item objects"
-                    }, 
-                    {
-                      "type": "Caption", 
-                      "children": [
-                        {
-                          "type": "Code", 
-                          "value": " var argentina = countries.get('items', 'arg'); -> Item#arg"
-                        }, 
-                        {
-                          "type": "Caption", 
-                          "children": [
-                            {
-                              "type": "Code", 
-                              "value": " argentina.value('name'); // => 'Argentina'\n argentina.value('currency_used'); // => 'Argentinian Peso'"
-                            }, 
-                            {
-                              "type": "Caption", 
-                              "children": [
-                                {
-                                  "type": "Code", 
-                                  "value": " argentina.values('form_of_government');\n // => [String#Federal_Republic, String#Presidential_system]"
-                                }, 
-                                {
-                                  "type": "Caption", 
-                                  "children": [
-                                    {
-                                      "type": "Code", 
-                                      "value": " argentina.values('form_of_government').each(function(index, gf) {\n   gf; // => e.g. 'Presidential System'\n });"
-                                    }
-                                  ], 
-                                  "value": "You can easily iterate over values using `SortedHash#each`"
-                                }
-                              ], 
-                              "value": "Non-unique properties have more that one value"
-                            }
-                          ], 
-                          "value": "Inspect item values"
-                        }
-                      ], 
-                      "value": "Or access them directly"
+                      "type": "Text", 
+                      "value": "An item of the collection conforms to a row in a data table, except one \u2018cell\u2019 can have arbitrary many values (non-unique attributes)."
                     }
                   ], 
-                  "value": "List all items"
+                  "value": null
+                }
+              ], 
+              "value": null
+            }, 
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "List all items:"
+                    }
+                  ], 
+                  "value": null
+                }, 
+                {
+                  "type": "Code", 
+                  "value": " var items = countries.all('items'); // => SortedHash containing Item objects\n"
+                }, 
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "Or access them directly:"
+                    }
+                  ], 
+                  "value": null
+                }, 
+                {
+                  "type": "Code", 
+                  "value": " var argentina = countries.get('items', 'arg'); -> Item#arg\n"
+                }, 
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "Inspect item values:"
+                    }
+                  ], 
+                  "value": null
+                }, 
+                {
+                  "type": "Code", 
+                  "value": " argentina.value('name'); // => 'Argentina'\n argentina.value('currency_used'); // => 'Argentinian Peso'\n"
+                }, 
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "Non-unique properties have more that one value:"
+                    }
+                  ], 
+                  "value": null
+                }, 
+                {
+                  "type": "Code", 
+                  "value": " argentina.values('form_of_government');\n // => [String#Federal_Republic, String#Presidential_system]\n"
+                }, 
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "You can easily iterate over values using `SortedHash#each`:"
+                    }
+                  ], 
+                  "value": null
+                }, 
+                {
+                  "type": "Code", 
+                  "value": " argentina.values('form_of_government').each(function(index, gf) {\n   gf; // => e.g. 'Presidential System'\n });\n"
                 }
               ], 
               "value": null
@@ -241,36 +373,62 @@
               "type": "Paragraph", 
               "children": [
                 {
-                  "type": "Text", 
-                  "value": "You can not only view values on a raw level but also as Nodes, which provide useful meta-information about connections etc."
-                }, 
-                {
-                  "type": "Caption", 
+                  "type": "TextBlock", 
                   "children": [
                     {
-                      "type": "Code", 
-                      "value": " var items = countries.all('items'); // => SortedHash containing Item objects"
-                    }, 
-                    {
-                      "type": "Caption", 
-                      "children": [
-                        {
-                          "type": "Code", 
-                          "value": " federal_republic = argentina.all('form_of_government').first();\n // => Node#Federal_Republic"
-                        }, 
-                        {
-                          "type": "Text", 
-                          "value": "Which other countries also have this government form?"
-                        }, 
-                        {
-                          "type": "Code", 
-                          "value": " federal_republic.all('items'); // => [Node#austria, Node#usa]"
-                        }
-                      ], 
-                      "value": "inspect the value 'Federal republic'"
+                      "type": "Text", 
+                      "value": "You can not only view values on a raw level but also as Nodes, which provide useful meta-information about connections etc."
                     }
                   ], 
-                  "value": "List all items"
+                  "value": null
+                }
+              ], 
+              "value": null
+            }, 
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "List all items:"
+                    }
+                  ], 
+                  "value": null
+                }, 
+                {
+                  "type": "Code", 
+                  "value": " var items = countries.all('items'); // => SortedHash containing Item objects\n"
+                }, 
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "inspect the value 'Federal republic':"
+                    }
+                  ], 
+                  "value": null
+                }, 
+                {
+                  "type": "Code", 
+                  "value": " federal_republic = argentina.all('form_of_government').first();\n // => Node#Federal_Republic\n"
+                }, 
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "Which other countries also have this government form?"
+                    }
+                  ], 
+                  "value": null
+                }, 
+                {
+                  "type": "Code", 
+                  "value": " federal_republic.all('items'); // => [Node#austria, Node#usa]\n"
                 }
               ], 
               "value": null
@@ -288,12 +446,18 @@
               "type": "Paragraph", 
               "children": [
                 {
-                  "type": "Text", 
-                  "value": "Since OrderedHashes conform to a set in mathematical respect, some interesting operations can be performed."
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "Since OrderedHashes conform to a set in mathematical respect, some interesting operations can be performed."
+                    }
+                  ], 
+                  "value": null
                 }, 
                 {
                   "type": "Code", 
-                  "value": " var english = countries.all('item').select(function(key, i) {\n   return i.value('official_language') === 'English'; \n });\n   \n var french = countries.all('item').select(function(key, i) {\n   return i.value('official_language') === 'French'; \n });\n \n // english and french speaking countries\n var english_and_french = english.intersect(french); // => [Node#canada]\n \n // english or french speaking countries\n var english_or_french = english.union(french);\n // => [Node#uk, Node#france, Node#Switzerland, ...]"
+                  "value": " var english = countries.all('item').select(function(key, i) {\n   return i.value('official_language') === 'English'; \n });\n   \n var french = countries.all('item').select(function(key, i) {\n   return i.value('official_language') === 'French'; \n });\n \n // english and french speaking countries\n var english_and_french = english.intersect(french); // => [Node#canada]\n \n // english or french speaking countries\n var english_or_french = english.union(french);\n // => [Node#uk, Node#france, Node#Switzerland, ...]\n"
                 }
               ], 
               "value": null
@@ -311,34 +475,70 @@
               "type": "Paragraph", 
               "children": [
                 {
-                  "type": "Text", 
-                  "value": "Transformers are used to do operations on the desired collection. A commonly used one is the group transformation."
-                }, 
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "Transformers are used to do operations on the desired collection. A commonly used one is the group transformation."
+                    }
+                  ], 
+                  "value": null
+                }
+              ], 
+              "value": null
+            }, 
+            {
+              "type": "Paragraph", 
+              "children": [
                 {
-                  "type": "Text", 
-                  "value": "The following code does a grouping by the `official_language` property and sums up all numeric properties (like population, area). What you get is a modified collection that shows aggregated values for all occurring languages."
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "The following code does a grouping by the `official_language` property and sums up all numeric properties (like population, area). What you get is a modified collection that shows aggregated values for all occurring languages."
+                    }
+                  ], 
+                  "value": null
                 }, 
                 {
                   "type": "Code", 
-                  "value": " var languages = countries.transform('group', {\n   property: 'official_language',\n   aggregator: 'SUM'\n });"
+                  "value": " var languages = countries.transform('group', {\n   property: 'official_language',\n   aggregator: 'SUM'\n });\n"
                 }, 
                 {
-                  "type": "Text", 
-                  "value": "The resulting collection looks like this"
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "The resulting collection looks like this"
+                    }
+                  ], 
+                  "value": null
                 }, 
                 {
                   "type": "Code", 
-                  "value": " {\n   \"properties\": \"properties\": {\n     \"official_language\": {\n       \"name\": \"Official language\",\n       \"type\": \"string\",\n       \"unique\": true\n     },\n     \"population\": {\n       \"name\": \"Population\",\n       \"type\": \"number\",\n       \"unique\": true\n     },\n     \"gdp_nominal\": {\n       \"name\": \"GDP nominal\",\n       \"type\": \"number\",\n       \"unique\": true\n     },\n     \"area\": {\n       \"name\": \"Area\",\n       \"type\": \"number\",\n       \"unique\": true\n     }\n   },\n   \"items\": {\n     \"English\": {\n       \"population\": 397445613,\n       \"gdp_nominal\": 4341700000000.0,\n       \"area\": 2780403.0,\n     },\n     \"German\": {\n       \"population\": 91560000,\n       \"gdp_nominal\": 4341700000000.0,\n       \"area\": 2780403.0,\n     },\n     ...\n   }\n };"
-                }, 
+                  "value": " {\n   \"properties\": \"properties\": {\n     \"official_language\": {\n       \"name\": \"Official language\",\n       \"type\": \"string\",\n       \"unique\": true\n     },\n     \"population\": {\n       \"name\": \"Population\",\n       \"type\": \"number\",\n       \"unique\": true\n     },\n     \"gdp_nominal\": {\n       \"name\": \"GDP nominal\",\n       \"type\": \"number\",\n       \"unique\": true\n     },\n     \"area\": {\n       \"name\": \"Area\",\n       \"type\": \"number\",\n       \"unique\": true\n     }\n   },\n   \"items\": {\n     \"English\": {\n       \"population\": 397445613,\n       \"gdp_nominal\": 4341700000000.0,\n       \"area\": 2780403.0,\n     },\n     \"German\": {\n       \"population\": 91560000,\n       \"gdp_nominal\": 4341700000000.0,\n       \"area\": 2780403.0,\n     },\n     ...\n   }\n };\n"
+                }
+              ], 
+              "value": null
+            }, 
+            {
+              "type": "Paragraph", 
+              "children": [
                 {
-                  "type": "Text", 
-                  "value": "Transformers are non-destructive. The original collection is not modified unless you re-assign the result."
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "Transformers are non-destructive. The original collection is not modified unless you re-assign the result."
+                    }
+                  ], 
+                  "value": null
                 }
               ], 
               "value": null
             }
           ], 
-          "value": "Transformers                                                     ", 
+          "value": "Transformers", 
           "properties": {
             "anchor": "TRANSFORMERS", 
             "level": 2
@@ -351,15 +551,21 @@
               "type": "Paragraph", 
               "children": [
                 {
-                  "type": "Text", 
-                  "value": "All you have to do is to assign a new property on the pv.Collection.transformers object, which holds a transformer function. This function takes an input collection and a params hash."
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "All you have to do is to assign a new property on the pv.Collection.transformers object, which holds a transformer function. This function takes an input collection and a params hash."
+                    }
+                  ], 
+                  "value": null
                 }, 
                 {
                   "type": "Code", 
-                  "value": " pv.Collection.transformers.group = function(c, params) {\n   // hardcore grouping action that yields a modified output collection\n   return outputColletion;\n };"
+                  "value": " pv.Collection.transformers.group = function(c, params) {\n   // hardcore grouping action that yields a modified output collection\n   return outputColletion;\n };\n"
                 }, 
                 {
-                  "type": "Text", 
+                  "type": "TextBlock", 
                   "children": [
                     {
                       "type": "Text", 
@@ -378,20 +584,42 @@
                     }
                   ], 
                   "value": null
-                }, 
+                }
+              ], 
+              "value": null
+            }, 
+            {
+              "type": "Paragraph", 
+              "children": [
                 {
-                  "type": "Caption", 
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "Transformer specification:"
+                    }
+                  ], 
+                  "value": null
+                }
+              ], 
+              "value": null
+            }, 
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "TextBlock", 
                   "children": [
                     {
                       "type": "Text", 
                       "value": "You need to define a specification for your transformation, which gives it a human readable name and describes the parameters your transformation takes."
-                    }, 
-                    {
-                      "type": "Code", 
-                      "value": " pv.Collection.transformers.group.label = \"Group By\";\n pv.Collection.transformers.group.params = {\n   properties: {\n     name: \"Property\",\n     type: \"property_list\"\n   },\n   aggregator: {\n     name: \"Aggregator Function\",\n     type: \"aggregator\"\n   }\n }"
                     }
                   ], 
-                  "value": "Transformer specification"
+                  "value": null
+                }, 
+                {
+                  "type": "Code", 
+                  "value": " pv.Collection.transformers.group.label = \"Group By\";\n pv.Collection.transformers.group.params = {\n   properties: {\n     name: \"Property\",\n     type: \"property_list\"\n   },\n   aggregator: {\n     name: \"Aggregator Function\",\n     type: \"aggregator\"\n   }\n }\n"
                 }
               ], 
               "value": null
@@ -409,17 +637,39 @@
               "type": "Paragraph", 
               "children": [
                 {
-                  "type": "Text", 
-                  "value": "Some sample collections are available through Collectionize, a dedicated aggregator service, that translates interesting web services to the collection format."
-                }, 
-                {
-                  "type": "Caption", 
+                  "type": "TextBlock", 
                   "children": [
                     {
-                      "type": "List", 
+                      "type": "Text", 
+                      "value": "Some sample collections are available through Collectionize, a dedicated aggregator service, that translates interesting web services to the collection format."
+                    }
+                  ], 
+                  "value": null
+                }
+              ], 
+              "value": null
+            }, 
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "Currently available:"
+                    }
+                  ], 
+                  "value": null
+                }, 
+                {
+                  "type": "List", 
+                  "children": [
+                    {
+                      "type": "ListItem", 
                       "children": [
                         {
-                          "type": "ListItem", 
+                          "type": "TextBlock", 
                           "children": [
                             {
                               "type": "Link", 
@@ -430,9 +680,15 @@
                             }
                           ], 
                           "value": null
-                        }, 
+                        }
+                      ], 
+                      "value": null
+                    }, 
+                    {
+                      "type": "ListItem", 
+                      "children": [
                         {
-                          "type": "ListItem", 
+                          "type": "TextBlock", 
                           "children": [
                             {
                               "type": "Link", 
@@ -448,7 +704,7 @@
                       "value": null
                     }
                   ], 
-                  "value": "Currently available"
+                  "value": null
                 }
               ], 
               "value": null
@@ -472,16 +728,46 @@
           "type": "Paragraph", 
           "children": [
             {
-              "type": "Text", 
-              "value": "The visualization API provides a simple abstraction layer for visualizations to ease the process of creating re-usable data-driven visualizations."
-            }, 
+              "type": "TextBlock", 
+              "children": [
+                {
+                  "type": "Text", 
+                  "value": "The visualization API provides a simple abstraction layer for visualizations to ease the process of creating re-usable data-driven visualizations."
+                }
+              ], 
+              "value": null
+            }
+          ], 
+          "value": null
+        }, 
+        {
+          "type": "Paragraph", 
+          "children": [
             {
-              "type": "Text", 
-              "value": "The appearance of the result is determined by the underlying data rather than by user defined plotting options. Visualizations directly access data trough a well defined interface, the Collection API, so there's no longer a gap between domain data and data used by the visualization engine."
-            }, 
+              "type": "TextBlock", 
+              "children": [
+                {
+                  "type": "Text", 
+                  "value": "The appearance of the result is determined by the underlying data rather than by user defined plotting options. Visualizations directly access data trough a well defined interface, the Collection API, so there's no longer a gap between domain data and data used by the visualization engine."
+                }
+              ], 
+              "value": null
+            }
+          ], 
+          "value": null
+        }, 
+        {
+          "type": "Paragraph", 
+          "children": [
             {
-              "type": "Text", 
-              "value": "Such visualization can be re-used in terms of putting in arbitrary data in. This works as long as the data is a valid Collection and satisfies the visualization specification (some visualizations exclusively use numbers as their input, others use dates (e.g. Timeline plots), and so on...)."
+              "type": "TextBlock", 
+              "children": [
+                {
+                  "type": "Text", 
+                  "value": "Such visualization can be re-used in terms of putting in arbitrary data in. This works as long as the data is a valid Collection and satisfies the visualization specification (some visualizations exclusively use numbers as their input, others use dates (e.g. Timeline plots), and so on...)."
+                }
+              ], 
+              "value": null
             }
           ], 
           "value": null
@@ -494,7 +780,7 @@
               "children": [
                 {
                   "type": "Code", 
-                  "value": " // load some data (represented as a Collection)\n c = new uv.Collection(countries);\n \n // construct a visualization based on that data\n vis = new uv.Linechart(c, {\n   measures: ['population'],\n   params: {scale: 'linear'}\n });\n vis.render();"
+                  "value": " // load some data (represented as a Collection)\n c = new uv.Collection(countries);\n \n // construct a visualization based on that data\n vis = new uv.Linechart(c, {\n   measures: ['population'],\n   params: {scale: 'linear'}\n });\n vis.render();\n"
                 }
               ], 
               "value": null
@@ -512,15 +798,21 @@
               "type": "Paragraph", 
               "children": [
                 {
-                  "type": "Text", 
-                  "value": "In order to create your own visualizations you need to setup a new class that inherits from uv.Visualization."
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "In order to create your own visualizations you need to setup a new class that inherits from uv.Visualization."
+                    }
+                  ], 
+                  "value": null
                 }, 
                 {
                   "type": "Code", 
-                  "value": " var MyChart = uv.Visualization.extend({\n   constructor: function(collection, options) {\n     uv.Visualization.call(this, collection, options);\n   },\n   render: function() {\n     // hardcore rendering action\n   }\n });"
+                  "value": " var MyChart = uv.Visualization.extend({\n   constructor: function(collection, options) {\n     uv.Visualization.call(this, collection, options);\n   },\n   render: function() {\n     // hardcore rendering action\n   }\n });\n"
                 }, 
                 {
-                  "type": "Text", 
+                  "type": "TextBlock", 
                   "children": [
                     {
                       "type": "Text", 
@@ -550,60 +842,106 @@
                     }
                   ], 
                   "value": null
-                }, 
+                }
+              ], 
+              "value": null
+            }, 
+            {
+              "type": "Paragraph", 
+              "children": [
                 {
-                  "type": "Caption", 
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "Visualization Specification:"
+                    }
+                  ], 
+                  "value": null
+                }
+              ], 
+              "value": null
+            }, 
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "TextBlock", 
                   "children": [
                     {
                       "type": "Text", 
                       "value": "There are various types of visualizations. Some exclusively use numbers as their input, some use dates (e.g. Timeline plots) others visualize relationships between data items (e.g. which countries share the same currency). There are further visualizations that use various combinations of measure types."
-                    }, 
+                    }
+                  ], 
+                  "value": null
+                }
+              ], 
+              "value": null
+            }, 
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "TextBlock", 
+                  "children": [
                     {
                       "type": "Text", 
-                      "value": "In order to verify that the current selection of measures can be displayed by the"
-                    }, 
+                      "value": "In order to verify that the current selection of measures can be displayed by the chosen visualization you have to define a specification like this:"
+                    }
+                  ], 
+                  "value": null
+                }, 
+                {
+                  "type": "Code", 
+                  "value": " // Displays 1..n number properties\n uv.Barchart.spec = {\n   measures: [\n     {\n       types: ['number'],\n       unique: true,\n       cardinality: 1      \n     },\n     {\n       types: ['number'],\n       unique: true,\n       cardinality: \"*\"\n     }\n   ]\n };\n"
+                }, 
+                {
+                  "type": "TextBlock", 
+                  "children": [
                     {
-                      "type": "Caption", 
+                      "type": "Text", 
+                      "value": "For reference have a look at the implementations of `Scatterplot` and `Linechart`."
+                    }
+                  ], 
+                  "value": null
+                }, 
+                {
+                  "type": "Paragraph", 
+                  "children": [
+                    {
+                      "type": "List", 
                       "children": [
                         {
-                          "type": "Code", 
-                          "value": " // Displays 1..n number properties\n uv.Barchart.spec = {\n   measures: [\n     {\n       types: ['number'],\n       unique: true,\n       cardinality: 1      \n     },\n     {\n       types: ['number'],\n       unique: true,\n       cardinality: \"*\"\n     }\n   ]\n };"
-                        }, 
-                        {
-                          "type": "Text", 
-                          "value": "For reference have a look at the implementations of `Scatterplot` and `Linechart`."
-                        }, 
-                        {
-                          "type": "Paragraph", 
+                          "type": "ListItem", 
                           "children": [
                             {
-                              "type": "List", 
+                              "type": "TextBlock", 
                               "children": [
                                 {
-                                  "type": "ListItem", 
-                                  "children": [
-                                    {
-                                      "type": "Link", 
-                                      "properties": {
-                                        "alias": "SCATTERPLOT"
-                                      }, 
-                                      "value": "SCATTERPLOT"
-                                    }
-                                  ], 
-                                  "value": null
-                                }, 
+                                  "type": "Link", 
+                                  "properties": {
+                                    "alias": "SCATTERPLOT"
+                                  }, 
+                                  "value": "SCATTERPLOT"
+                                }
+                              ], 
+                              "value": null
+                            }
+                          ], 
+                          "value": null
+                        }, 
+                        {
+                          "type": "ListItem", 
+                          "children": [
+                            {
+                              "type": "TextBlock", 
+                              "children": [
                                 {
-                                  "type": "ListItem", 
-                                  "children": [
-                                    {
-                                      "type": "Link", 
-                                      "properties": {
-                                        "alias": "LINECHART"
-                                      }, 
-                                      "value": "LINECHART"
-                                    }
-                                  ], 
-                                  "value": null
+                                  "type": "Link", 
+                                  "properties": {
+                                    "alias": "LINECHART"
+                                  }, 
+                                  "value": "LINECHART"
                                 }
                               ], 
                               "value": null
@@ -612,10 +950,10 @@
                           "value": null
                         }
                       ], 
-                      "value": "chosen visualization you have to define a specification like this"
+                      "value": null
                     }
                   ], 
-                  "value": "Visualization Specification"
+                  "value": null
                 }
               ], 
               "value": null
@@ -627,7 +965,7 @@
           }
         }
       ], 
-      "value": "Visualization API                                                         ", 
+      "value": "Visualization API", 
       "properties": {
         "anchor": "VIS", 
         "level": 1
@@ -640,11 +978,219 @@
           "type": "Paragraph", 
           "children": [
             {
-              "type": "Text", 
-              "value": "Node (not to be confused with Node.js) is a JavaScript Graph implementation that hides graph complexity from the interface. It introduces properties, which group types of edges together. Therefore multi-partit graphs are possible without any hassle. Every Node simply contains properties which conform to outgoing edges. It makes heavy use of hashing through JavaScript object properties to allow random access whenever possible."
+              "type": "TextBlock", 
+              "children": [
+                {
+                  "type": "Text", 
+                  "value": "Inspired by various great visualization libraries (Protovis, Processing.js) I created my own rather low level visualization framework that is basically an implementation of a scene graph on top of the HTML5 Canvas API."
+                }
+              ], 
+              "value": null
+            }
+          ], 
+          "value": null
+        }, 
+        {
+          "type": "Paragraph", 
+          "children": [
+            {
+              "type": "TextBlock", 
+              "children": [
+                {
+                  "type": "Text", 
+                  "value": "I focussed on two core principles:"
+                }
+              ], 
+              "value": null
             }, 
             {
-              "type": "Text", 
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "List", 
+                  "children": [
+                    {
+                      "type": "ListItem", 
+                      "children": [
+                        {
+                          "type": "TextBlock", 
+                          "children": [
+                            {
+                              "type": "Text", 
+                              "value": "Object oriented"
+                            }
+                          ], 
+                          "value": null
+                        }
+                      ], 
+                      "value": null
+                    }, 
+                    {
+                      "type": "ListItem", 
+                      "children": [
+                        {
+                          "type": "TextBlock", 
+                          "children": [
+                            {
+                              "type": "Text", 
+                              "value": "Declarative"
+                            }
+                          ], 
+                          "value": null
+                        }
+                      ], 
+                      "value": null
+                    }
+                  ], 
+                  "value": null
+                }
+              ], 
+              "value": null
+            }, 
+            {
+              "type": "TextBlock", 
+              "children": [
+                {
+                  "type": "Text", 
+                  "value": "Object oriented in terms of thinking in graphical objects and modularizing your code."
+                }
+              ], 
+              "value": null
+            }
+          ], 
+          "value": null
+        }, 
+        {
+          "type": "Paragraph", 
+          "children": [
+            {
+              "type": "TextBlock", 
+              "children": [
+                {
+                  "type": "Text", 
+                  "value": "Declarative in terms of using"
+                }, 
+                {
+                  "type": "Link", 
+                  "properties": {
+                    "alias": "/configuring/combining"
+                  }, 
+                  "value": "/configuring/combining"
+                }, 
+                {
+                  "type": "Text", 
+                  "value": " existing graphical objects and attach them to the scene graph."
+                }
+              ], 
+              "value": null
+            }
+          ], 
+          "value": null
+        }, 
+        {
+          "type": "Section", 
+          "children": [
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "Each object has some properties. These could either be properties of the input domain (for higher level objects such as a Barchart)"
+                    }
+                  ], 
+                  "value": null
+                }
+              ], 
+              "value": null
+            }
+          ], 
+          "value": "Properties", 
+          "properties": {
+            "level": 2
+          }
+        }, 
+        {
+          "type": "Section", 
+          "children": [
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "Reverse object lookup. This simply means one thing: Given a mouse-coordinate I want to know which objects are ."
+                    }
+                  ], 
+                  "value": null
+                }
+              ], 
+              "value": null
+            }, 
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "Normally you'd have to iterate over all objects asking each one: Are you in the mouse coordinate range? We use a different approach. Aside from the regular canvas element w're drawing at we create another pixel buffer that draws let's say the negative of each object. So we have the regular canvas and the reverse- lookup pixel buffer containing masks for each graphical object."
+                    }
+                  ], 
+                  "value": null
+                }
+              ], 
+              "value": null
+            }
+          ], 
+          "value": "Event handlers", 
+          "properties": {
+            "level": 2
+          }
+        }, 
+        {
+          "type": "Section", 
+          "properties": {
+            "level": 2
+          }, 
+          "value": "Motion tweening"
+        }
+      ], 
+      "value": "Scene API", 
+      "properties": {
+        "anchor": "SCENE", 
+        "level": 1
+      }
+    }, 
+    {
+      "type": "Section", 
+      "children": [
+        {
+          "type": "Paragraph", 
+          "children": [
+            {
+              "type": "TextBlock", 
+              "children": [
+                {
+                  "type": "Text", 
+                  "value": "Node (not to be confused with Node.js) is a JavaScript Graph implementation that hides graph complexity from the interface. It introduces properties, which group types of edges together. Therefore multi-partit graphs are possible without any hassle. Every Node simply contains properties which conform to outgoing edges. It makes heavy use of hashing through JavaScript object properties to allow random access whenever possible."
+                }
+              ], 
+              "value": null
+            }
+          ], 
+          "value": null
+        }, 
+        {
+          "type": "Paragraph", 
+          "children": [
+            {
+              "type": "TextBlock", 
               "children": [
                 {
                   "type": "Text", 
@@ -659,7 +1205,7 @@
                 }, 
                 {
                   "type": "Text", 
-                  "value": ", lease have a look at the documentation before you start."
+                  "value": ", please have a look at the documentation before you start."
                 }
               ], 
               "value": null
@@ -675,7 +1221,7 @@
               "children": [
                 {
                   "type": "Code", 
-                  "value": " // Initialize a plain Node\n  var austria = new Node(),\n      germany = new Node(),\n      uk = new Node();\n  \n // initialize with raw Value (raw values are typically stored in leave nodes)\n var eu = new Node({value: 'European Union'}),\n     austrian = new Node({value: 'Austrian'}),\n     english = new Node({value: 'English'}),\n     german = new Node({value: 'German'}),\n     barroso = new Node({value: 'Barroso'});"
+                  "value": " // Initialize a plain Node\n  var austria = new Node(),\n      germany = new Node(),\n      uk = new Node();\n  \n // initialize with raw Value (raw values are typically stored in leave nodes)\n var eu = new Node({value: 'European Union'}),\n     austrian = new Node({value: 'Austrian'}),\n     english = new Node({value: 'English'}),\n     german = new Node({value: 'German'}),\n     barroso = new Node({value: 'Barroso'});\n"
                 }
               ], 
               "value": null
@@ -694,7 +1240,7 @@
               "children": [
                 {
                   "type": "Code", 
-                  "value": " austria.set('languages', 'at', austrian);\n austria.set('languages', 'ger', german); \n \n eu.set('president', 'barroso', barroso);\n \n // Backlinks\n german.set('spoken_in', {\n   'at': austria,\n   'de': germany\n });"
+                  "value": " austria.set('languages', 'at', austrian);\n austria.set('languages', 'ger', german); \n \n eu.set('president', 'barroso', barroso);\n \n // Backlinks\n german.set('spoken_in', {\n   'at': austria,\n   'de': germany\n });\n"
                 }
               ], 
               "value": null
@@ -713,7 +1259,7 @@
               "children": [
                 {
                   "type": "Code", 
-                  "value": " austria.all('languages') // => [Node#austrian, Node#german]\n eu.first('president') // => [Node#barroso]\n german.all('spoken_in') // => [Node#austria, Node#germany]"
+                  "value": " austria.all('languages') // => [Node#austrian, Node#german]\n eu.first('president') // => [Node#barroso]\n german.all('spoken_in') // => [Node#austria, Node#germany]\n"
                 }
               ], 
               "value": null
@@ -731,24 +1277,32 @@
               "type": "Paragraph", 
               "children": [
                 {
-                  "type": "Caption", 
+                  "type": "TextBlock", 
                   "children": [
                     {
-                      "type": "Code", 
-                      "value": " austria.all('languages').each(function(index, node) {\n   node; // => Node#at | Node#ger\n   index; // => 0 | 1\n });"
-                    }, 
-                    {
-                      "type": "Caption", 
-                      "children": [
-                        {
-                          "type": "Code", 
-                          "value": " austria.all('languages').eachKey(function(key, node) {\n   node; // => Node#at | Node#ger\n   key; // => 'at' | 'ger'\n });"
-                        }
-                      ], 
-                      "value": "eachKey"
+                      "type": "Text", 
+                      "value": "each:"
                     }
                   ], 
-                  "value": "each"
+                  "value": null
+                }, 
+                {
+                  "type": "Code", 
+                  "value": " austria.all('languages').each(function(index, node) {\n   node; // => Node#at | Node#ger\n   index; // => 0 | 1\n });\n"
+                }, 
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "eachKey:"
+                    }
+                  ], 
+                  "value": null
+                }, 
+                {
+                  "type": "Code", 
+                  "value": " austria.all('languages').eachKey(function(key, node) {\n   node; // => Node#at | Node#ger\n   key; // => 'at' | 'ger'\n });\n"
                 }
               ], 
               "value": null
@@ -760,7 +1314,7 @@
           }
         }
       ], 
-      "value": "Node API                                                                 ", 
+      "value": "Node API", 
       "properties": {
         "anchor": "NODE", 
         "level": 1
@@ -773,8 +1327,14 @@
           "type": "Paragraph", 
           "children": [
             {
-              "type": "Text", 
-              "value": "Unveil.js features a `SortedHash` data structure that provides a simple layer of abstraction for managing Sorted Hashes in JavaScript. It's heavily used throughout the framework."
+              "type": "TextBlock", 
+              "children": [
+                {
+                  "type": "Text", 
+                  "value": "Unveil.js features a `SortedHash` data structure that provides a simple layer of abstraction for managing Sorted Hashes in JavaScript. It's heavily used throughout the framework."
+                }
+              ], 
+              "value": null
             }
           ], 
           "value": null
@@ -787,7 +1347,7 @@
               "children": [
                 {
                   "type": "Code", 
-                  "value": " var items = new SortedHash();\n items.set('at', 'Austria');\n items.set('de', 'Germany');"
+                  "value": " var items = new SortedHash();\n items.set('at', 'Austria');\n items.set('de', 'Germany');\n"
                 }
               ], 
               "value": null
@@ -805,24 +1365,32 @@
               "type": "Paragraph", 
               "children": [
                 {
-                  "type": "Caption", 
+                  "type": "TextBlock", 
                   "children": [
                     {
-                      "type": "Code", 
-                      "value": " items.get('at') // => 'Austria';\n items.get('de') // => 'Germany';"
-                    }, 
-                    {
-                      "type": "Caption", 
-                      "children": [
-                        {
-                          "type": "Code", 
-                          "value": " items.at(0); // => 'Austria'\n items.at(1); // => 'Germany'\n items.length; // => 2"
-                        }
-                      ], 
-                      "value": "Array Semantics"
+                      "type": "Text", 
+                      "value": "Hash Semantics:"
                     }
                   ], 
-                  "value": "Hash Semantics"
+                  "value": null
+                }, 
+                {
+                  "type": "Code", 
+                  "value": " items.get('at') // => 'Austria';\n items.get('de') // => 'Germany';\n"
+                }, 
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "Array Semantics:"
+                    }
+                  ], 
+                  "value": null
+                }, 
+                {
+                  "type": "Code", 
+                  "value": " items.at(0); // => 'Austria'\n items.at(1); // => 'Germany'\n items.length; // => 2\n"
                 }
               ], 
               "value": null
@@ -840,24 +1408,32 @@
               "type": "Paragraph", 
               "children": [
                 {
-                  "type": "Caption", 
+                  "type": "TextBlock", 
                   "children": [
                     {
-                      "type": "Code", 
-                      "value": " items.each(function(index, value) {\n   value; // => 'Austria', 'Germany'\n   index; // => 0, 1\n });"
-                    }, 
-                    {
-                      "type": "Caption", 
-                      "children": [
-                        {
-                          "type": "Code", 
-                          "value": " items.eachKey(function(key, value) {\n   value; // => 'Austria', 'Germany'\n   key; // => 'at', 'de'\n })"
-                        }
-                      ], 
-                      "value": "eachKey"
+                      "type": "Text", 
+                      "value": "each:"
                     }
                   ], 
-                  "value": "each"
+                  "value": null
+                }, 
+                {
+                  "type": "Code", 
+                  "value": " items.each(function(index, value) {\n   value; // => 'Austria', 'Germany'\n   index; // => 0, 1\n });\n"
+                }, 
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "eachKey:"
+                    }
+                  ], 
+                  "value": null
+                }, 
+                {
+                  "type": "Code", 
+                  "value": " items.eachKey(function(key, value) {\n   value; // => 'Austria', 'Germany'\n   key; // => 'at', 'de'\n })\n"
                 }
               ], 
               "value": null
@@ -875,255 +1451,255 @@
               "type": "Paragraph", 
               "children": [
                 {
-                  "type": "Caption", 
+                  "type": "TextBlock", 
                   "children": [
                     {
-                      "type": "Code", 
-                      "value": " var desc = function(item1, item2) {\n       return item1.value === item2.value\n         ? 0 : (item1.value > item2.value ? -1 : 1);\n     },\n     sortedItems;\n \n sortedItems = items.sort(descendingOrder);"
-                    }, 
-                    {
-                      "type": "Caption", 
-                      "children": [
-                        {
-                          "type": "Code", 
-                          "value": " var mappedItems = items.map(function (item) {\n   return item.slice(0, 3);\n });\n \n // leave original SortedHash untouched\n mappedItems.at(0) // => 'Aus';\n mappedItems.at(1) // => 'Ger';"
-                        }, 
-                        {
-                          "type": "Text", 
-                          "value": "This returns a SortedHash in descending order, while the original remains untouched."
-                        }, 
-                        {
-                          "type": "Caption", 
-                          "children": [
-                            {
-                              "type": "Code", 
-                              "value": " var selectedItems = items.select(function (key, item) {\n       return item === 'Austria';\n     });\n \n selectedItems.at(0) // => 'Austria';\n selectedItems.length; // => 1;"
-                            }, 
-                            {
-                              "type": "Caption", 
-                              "children": [
-                                {
-                                  "type": "Code", 
-                                  "value": " var items2 = new SortedHash(),\n     intersectedItems;\n \n items2.set('fr', 'France');\n items2.set('at', 'Austria');\n \n intersectedItems = items.intersect(items2);\n \n intersectedItems.length; // => 1\n intersectedItems.get('at'); // => 'Austria'"
-                                }, 
-                                {
-                                  "type": "Caption", 
-                                  "children": [
-                                    {
-                                      "type": "Code", 
-                                      "value": " var items2 = new SortedHash(),\n     unitedItems;\n \n items2.set('fr', 'France');\n items2.set('at', 'Austria');\n \n intersectedItems = items.intersect(items2);\n \n unitedItems.length; // => 3\n unitedItems.get('at'); // => 'Austria'\n unitedItems.get('de'); // => 'Germany'\n unitedItems.get('fr'); // => 'France'"
-                                    }, 
-                                    {
-                                      "type": "Caption", 
-                                      "children": [
-                                        {
-                                          "type": "Code", 
-                                          "value": " var mappedAndSortedItems = items.map(function (item) {\n       return item.slice(0, 3);\n     })\n     .sort(descendingOrder);\n \n selectedItems.at(0) // => 'Ger';\n selectedItems.at(2) // => 'Aus';"
-                                        }, 
-                                        {
-                                          "type": "Text", 
-                                          "children": [
-                                            {
-                                              "type": "Text", 
-                                              "value": "COLL:          "
-                                            }, 
-                                            {
-                                              "type": "Link", 
-                                              "properties": {
-                                                "alias": "Collection API"
-                                              }, 
-                                              "value": "http://github.com/michael/unveil/tree/master/src/collection/"
-                                            }
-                                          ], 
-                                          "value": null
-                                        }, 
-                                        {
-                                          "type": "Text", 
-                                          "children": [
-                                            {
-                                              "type": "Text", 
-                                              "value": "NODE:          "
-                                            }, 
-                                            {
-                                              "type": "Link", 
-                                              "properties": {
-                                                "alias": "Node API"
-                                              }, 
-                                              "value": "http://github.com/michael/unveil/tree/master/src/node/"
-                                            }
-                                          ], 
-                                          "value": null
-                                        }, 
-                                        {
-                                          "type": "Text", 
-                                          "children": [
-                                            {
-                                              "type": "Text", 
-                                              "value": "SH:            "
-                                            }, 
-                                            {
-                                              "type": "Link", 
-                                              "properties": {
-                                                "alias": "SortedHash API"
-                                              }, 
-                                              "value": "http://github.com/michael/unveil/tree/master/src/sorted_hash/"
-                                            }
-                                          ], 
-                                          "value": null
-                                        }, 
-                                        {
-                                          "type": "Text", 
-                                          "children": [
-                                            {
-                                              "type": "Text", 
-                                              "value": "SCATTERPLOT:   "
-                                            }, 
-                                            {
-                                              "type": "Link", 
-                                              "properties": {
-                                                "alias": "Scatterplot"
-                                              }, 
-                                              "value": "http://github.com/michael/unveil/tree/master/src/visualization/visualizations/scatterplot.js"
-                                            }
-                                          ], 
-                                          "value": null
-                                        }, 
-                                        {
-                                          "type": "Text", 
-                                          "children": [
-                                            {
-                                              "type": "Text", 
-                                              "value": "LINECHART:     "
-                                            }, 
-                                            {
-                                              "type": "Link", 
-                                              "properties": {
-                                                "alias": "Linechart"
-                                              }, 
-                                              "value": "http://github.com/michael/unveil/tree/master/src/visualization/visualizations/linechart.js"
-                                            }
-                                          ], 
-                                          "value": null
-                                        }, 
-                                        {
-                                          "type": "Text", 
-                                          "children": [
-                                            {
-                                              "type": "Text", 
-                                              "value": "PROTOVIS:      "
-                                            }, 
-                                            {
-                                              "type": "Link", 
-                                              "properties": {
-                                                "alias": "Protovis"
-                                              }, 
-                                              "value": "http://protovis.org"
-                                            }
-                                          ], 
-                                          "value": null
-                                        }, 
-                                        {
-                                          "type": "Text", 
-                                          "children": [
-                                            {
-                                              "type": "Text", 
-                                              "value": "PROCESSINGJS:  "
-                                            }, 
-                                            {
-                                              "type": "Link", 
-                                              "properties": {
-                                                "alias": "Processing.js"
-                                              }, 
-                                              "value": "http://processingjs.org"
-                                            }
-                                          ], 
-                                          "value": null
-                                        }, 
-                                        {
-                                          "type": "Text", 
-                                          "children": [
-                                            {
-                                              "type": "Text", 
-                                              "value": "COUNTRIES:     "
-                                            }, 
-                                            {
-                                              "type": "Link", 
-                                              "properties": {
-                                                "alias": "Countries fetched from Freebase.com"
-                                              }, 
-                                              "value": "http://collections.quasipartikel.at/countries"
-                                            }
-                                          ], 
-                                          "value": null
-                                        }, 
-                                        {
-                                          "type": "Text", 
-                                          "children": [
-                                            {
-                                              "type": "Text", 
-                                              "value": "PLAYLISTS:     "
-                                            }, 
-                                            {
-                                              "type": "Link", 
-                                              "properties": {
-                                                "alias": "Last.fm Playlists"
-                                              }, 
-                                              "value": "http://collections.quasipartikel.at/playlists"
-                                            }
-                                          ], 
-                                          "value": null
-                                        }, 
-                                        {
-                                          "type": "Text", 
-                                          "children": [
-                                            {
-                                              "type": "Text", 
-                                              "value": "NDOGEN:        "
-                                            }, 
-                                            {
-                                              "type": "Link", 
-                                              "properties": {
-                                                "alias": "Ndogen"
-                                              }, 
-                                              "value": "http://github.com/oliver----/ndogen"
-                                            }
-                                          ], 
-                                          "value": null
-                                        }, 
-                                        {
-                                          "type": "Text", 
-                                          "children": [
-                                            {
-                                              "type": "Text", 
-                                              "value": "GROUPT:        "
-                                            }, 
-                                            {
-                                              "type": "Link", 
-                                              "properties": {
-                                                "alias": "Group Transformer"
-                                              }, 
-                                              "value": "http://github.com/michael/unveil/blob/master/src/collection/transformers/group.js"
-                                            }
-                                          ], 
-                                          "value": null
-                                        }
-                                      ], 
-                                      "value": "Method chaining"
-                                    }
-                                  ], 
-                                  "value": "union"
-                                }
-                              ], 
-                              "value": "intersect"
-                            }
-                          ], 
-                          "value": "select"
-                        }
-                      ], 
-                      "value": "map"
+                      "type": "Text", 
+                      "value": "sort:"
                     }
                   ], 
-                  "value": "sort"
+                  "value": null
+                }, 
+                {
+                  "type": "Code", 
+                  "value": " var desc = function(item1, item2) {\n       return item1.value === item2.value\n         ? 0 : (item1.value > item2.value ? -1 : 1);\n     },\n     sortedItems;\n \n sortedItems = items.sort(descendingOrder);\n"
+                }
+              ], 
+              "value": null
+            }, 
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "map: @TODO"
+                    }
+                  ], 
+                  "value": null
+                }, 
+                {
+                  "type": "Code", 
+                  "value": " var mappedItems = items.map(function (item) {\n   return item.slice(0, 3);\n });\n \n // leave original SortedHash untouched\n mappedItems.at(0) // => 'Aus';\n mappedItems.at(1) // => 'Ger';\n"
+                }, 
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "This returns a SortedHash in descending order, while the original remains untouched."
+                    }
+                  ], 
+                  "value": null
+                }
+              ], 
+              "value": null
+            }, 
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "select:"
+                    }
+                  ], 
+                  "value": null
+                }, 
+                {
+                  "type": "Code", 
+                  "value": " var selectedItems = items.select(function (key, item) {\n       return item === 'Austria';\n     });\n \n selectedItems.at(0) // => 'Austria';\n selectedItems.length; // => 1;\n"
+                }
+              ], 
+              "value": null
+            }, 
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "intersect:"
+                    }
+                  ], 
+                  "value": null
+                }, 
+                {
+                  "type": "Code", 
+                  "value": " var items2 = new SortedHash(),\n     intersectedItems;\n \n items2.set('fr', 'France');\n items2.set('at', 'Austria');\n \n intersectedItems = items.intersect(items2);\n \n intersectedItems.length; // => 1\n intersectedItems.get('at'); // => 'Austria'\n"
+                }
+              ], 
+              "value": null
+            }, 
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "union:"
+                    }
+                  ], 
+                  "value": null
+                }, 
+                {
+                  "type": "Code", 
+                  "value": " var items2 = new SortedHash(),\n     unitedItems;\n \n items2.set('fr', 'France');\n items2.set('at', 'Austria');\n \n intersectedItems = items.intersect(items2);\n \n unitedItems.length; // => 3\n unitedItems.get('at'); // => 'Austria'\n unitedItems.get('de'); // => 'Germany'\n unitedItems.get('fr'); // => 'France'\n"
+                }, 
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "Method chaining:"
+                    }
+                  ], 
+                  "value": null
+                }, 
+                {
+                  "type": "Code", 
+                  "value": " var mappedAndSortedItems = items.map(function (item) {\n       return item.slice(0, 3);\n     })\n     .sort(descendingOrder);\n \n selectedItems.at(0) // => 'Ger';\n selectedItems.at(2) // => 'Aus';\n"
+                }
+              ], 
+              "value": null
+            }, 
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "@COLL:          "
+                    }, 
+                    {
+                      "type": "Link", 
+                      "properties": {
+                        "alias": "Collection API"
+                      }, 
+                      "value": "http://github.com/michael/unveil/tree/master/src/collection/"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": "@NODE:          "
+                    }, 
+                    {
+                      "type": "Link", 
+                      "properties": {
+                        "alias": "Node API"
+                      }, 
+                      "value": "http://github.com/michael/unveil/tree/master/src/node/"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": "@SH:            "
+                    }, 
+                    {
+                      "type": "Link", 
+                      "properties": {
+                        "alias": "SortedHash API"
+                      }, 
+                      "value": "http://github.com/michael/unveil/tree/master/src/sorted_hash/"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": "@SCATTERPLOT:   "
+                    }, 
+                    {
+                      "type": "Link", 
+                      "properties": {
+                        "alias": "Scatterplot"
+                      }, 
+                      "value": "http://github.com/michael/unveil/tree/master/src/visualization/visualizations/scatterplot.js"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": "@LINECHART:     "
+                    }, 
+                    {
+                      "type": "Link", 
+                      "properties": {
+                        "alias": "Linechart"
+                      }, 
+                      "value": "http://github.com/michael/unveil/tree/master/src/visualization/visualizations/linechart.js"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": "@PROTOVIS:      "
+                    }, 
+                    {
+                      "type": "Link", 
+                      "properties": {
+                        "alias": "Protovis"
+                      }, 
+                      "value": "http://protovis.org"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": "@PROCESSINGJS:  "
+                    }, 
+                    {
+                      "type": "Link", 
+                      "properties": {
+                        "alias": "Processing.js"
+                      }, 
+                      "value": "http://processingjs.org"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": "@COUNTRIES:     "
+                    }, 
+                    {
+                      "type": "Link", 
+                      "properties": {
+                        "alias": "Countries fetched from Freebase.com"
+                      }, 
+                      "value": "http://collections.quasipartikel.at/countries"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": "@PLAYLISTS:     "
+                    }, 
+                    {
+                      "type": "Link", 
+                      "properties": {
+                        "alias": "Last.fm Playlists"
+                      }, 
+                      "value": "http://collections.quasipartikel.at/playlists"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": "@NDOGEN:        "
+                    }, 
+                    {
+                      "type": "Link", 
+                      "properties": {
+                        "alias": "Ndogen"
+                      }, 
+                      "value": "http://github.com/oliver----/ndogen"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": "@GROUPT:        "
+                    }, 
+                    {
+                      "type": "Link", 
+                      "properties": {
+                        "alias": "Group Transformer"
+                      }, 
+                      "value": "http://github.com/michael/unveil/blob/master/src/collection/transformers/group.js"
+                    }
+                  ], 
+                  "value": null
                 }
               ], 
               "value": null
@@ -1135,7 +1711,7 @@
           }
         }
       ], 
-      "value": "Sorted Hash API                                                    ", 
+      "value": "Sorted Hash API", 
       "properties": {
         "anchor": "SORTEDHASH", 
         "level": 1
