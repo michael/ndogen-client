@@ -12,7 +12,7 @@
               "children": [
                 {
                   "type": "Text", 
-                  "value": "Unveil is a data exploration and visualization toolkit that utilizes data-driven software design. It features several modules."
+                  "value": "Unveil is a data exploration and visualization toolkit that utilizes data-driven software design."
                 }
               ], 
               "value": null
@@ -28,7 +28,7 @@
               "children": [
                 {
                   "type": "Text", 
-                  "value": "Documentation:"
+                  "value": "Note:"
                 }
               ], 
               "value": null
@@ -44,18 +44,29 @@
               "children": [
                 {
                   "type": "Text", 
-                  "value": "This documentation is generated on the fly using the ndogen documentation generator. Since this instant doc-generation part is under heavy development, you'll experience some glitches. We're working on it! Have a look at the "
+                  "value": "This documentation is generated on the fly using the "
                 }, 
                 {
                   "type": "Link", 
                   "properties": {
-                    "alias": "markup"
+                    "alias": "Ndogen"
+                  }, 
+                  "value": "http://github.com/oliver----/ndogen"
+                }, 
+                {
+                  "type": "Text", 
+                  "value": " documentation generator. Since this instant doc-generation part is under heavy development, you'll experience some glitches. We're working on it! Please have a look at the "
+                }, 
+                {
+                  "type": "Link", 
+                  "properties": {
+                    "alias": "raw markup"
                   }, 
                   "value": "http://github.com/michael/unveil/blob/master/index.ndg"
                 }, 
                 {
                   "type": "Text", 
-                  "value": " too, to view this documentation on a raw-level. ;-)"
+                  "value": " too."
                 }
               ], 
               "value": null
@@ -167,18 +178,7 @@
                   "children": [
                     {
                       "type": "Text", 
-                      "value": "Please make yourself familiar with the "
-                    }, 
-                    {
-                      "type": "Link", 
-                      "properties": {
-                        "alias": "Node API"
-                      }, 
-                      "value": "NODE"
-                    }, 
-                    {
-                      "type": "Text", 
-                      "value": ", which is the data structure used for modeling the internal structure of a collection, which is a graph. Be aware that `Collection`, `Property`, `Item` and `Value` objects inherit from Node, so the full Node API is available on such objects."
+                      "value": "Please make yourself familiar with the Node API, which is the data structure used for modeling the internal structure of a collection, which is a graph. Be aware that `Collection`, `Property`, `Item` and `Value` objects inherit from Node, so the full Node API is available on such objects."
                     }
                   ], 
                   "value": null
@@ -569,14 +569,14 @@
                   "children": [
                     {
                       "type": "Text", 
-                      "value": "See the implementation of the "
+                      "value": "Have a look at the implementation of the "
                     }, 
                     {
                       "type": "Link", 
                       "properties": {
-                        "alias": "GROUPT"
+                        "alias": "Group Transformer"
                       }, 
-                      "value": "GROUPT"
+                      "value": "http://github.com/michael/unveil/blob/master/src/collection/transformers/group.js"
                     }, 
                     {
                       "type": "Text", 
@@ -674,9 +674,9 @@
                             {
                               "type": "Link", 
                               "properties": {
-                                "alias": "COUNTRIES"
+                                "alias": "Countries fetched from Freebase.com"
                               }, 
-                              "value": "COUNTRIES"
+                              "value": "http://collections.quasipartikel.at/countries"
                             }
                           ], 
                           "value": null
@@ -693,9 +693,9 @@
                             {
                               "type": "Link", 
                               "properties": {
-                                "alias": "PLAYLISTS"
+                                "alias": "Last.fm Playlists"
                               }, 
-                              "value": "PLAYLISTS"
+                              "value": "http://collections.quasipartikel.at/playlists"
                             }
                           ], 
                           "value": null
@@ -821,9 +821,9 @@
                     {
                       "type": "Link", 
                       "properties": {
-                        "alias": "PROTOVIS"
+                        "alias": "Protovis"
                       }, 
-                      "value": "PROTOVIS"
+                      "value": "http://protovis.org"
                     }, 
                     {
                       "type": "Text", 
@@ -832,9 +832,9 @@
                     {
                       "type": "Link", 
                       "properties": {
-                        "alias": "PJS"
+                        "alias": "Processing.js"
                       }, 
-                      "value": "PJS"
+                      "value": "http://processingjs.org"
                     }, 
                     {
                       "type": "Text", 
@@ -920,9 +920,9 @@
                                 {
                                   "type": "Link", 
                                   "properties": {
-                                    "alias": "SCATTERPLOT"
+                                    "alias": "Scatterplot"
                                   }, 
-                                  "value": "SCATTERPLOT"
+                                  "value": "http://github.com/michael/unveil/tree/master/src/visualization/visualizations/scatterplot.js"
                                 }
                               ], 
                               "value": null
@@ -939,9 +939,9 @@
                                 {
                                   "type": "Link", 
                                   "properties": {
-                                    "alias": "LINECHART"
+                                    "alias": "Linechart"
                                   }, 
-                                  "value": "LINECHART"
+                                  "value": "http://github.com/michael/unveil/tree/master/src/visualization/visualizations/linechart.js"
                                 }
                               ], 
                               "value": null
@@ -982,7 +982,7 @@
               "children": [
                 {
                   "type": "Text", 
-                  "value": "Inspired by various great visualization libraries (Protovis, Processing.js) I created my own rather low level visualization framework that is basically an implementation of a scene graph on top of the HTML5 Canvas API."
+                  "value": "Inspired by various great visualization libraries (Protovis, Processing.js) I created my own rather low level visualization framework that is basically an implementation of a SceneGraph on top of the HTML5 Canvas API."
                 }
               ], 
               "value": null
@@ -1052,7 +1052,7 @@
               "children": [
                 {
                   "type": "Text", 
-                  "value": "Object oriented in terms of thinking in graphical objects and modularizing your code."
+                  "value": "Object oriented in terms of thinking in graphical objects and modularizing code, declarative in terms of using, configuring and combining existing actors (graphical objects) and attach them to the scene graph."
                 }
               ], 
               "value": null
@@ -1068,21 +1068,14 @@
               "children": [
                 {
                   "type": "Text", 
-                  "value": "Declarative in terms of using"
-                }, 
-                {
-                  "type": "Link", 
-                  "properties": {
-                    "alias": "/configuring/combining"
-                  }, 
-                  "value": "/configuring/combining"
-                }, 
-                {
-                  "type": "Text", 
-                  "value": " existing graphical objects and attach them to the scene graph."
+                  "value": "Creating a scene is easy:"
                 }
               ], 
               "value": null
+            }, 
+            {
+              "type": "Code", 
+              "value": " var scene = new uv.Scene({\n       width: 800,\n       height: 400\n     });\n"
             }
           ], 
           "value": null
@@ -1098,32 +1091,7 @@
                   "children": [
                     {
                       "type": "Text", 
-                      "value": "Each object has some properties. These could either be properties of the input domain (for higher level objects such as a Barchart)"
-                    }
-                  ], 
-                  "value": null
-                }
-              ], 
-              "value": null
-            }
-          ], 
-          "value": "Properties", 
-          "properties": {
-            "level": 2
-          }
-        }, 
-        {
-          "type": "Section", 
-          "children": [
-            {
-              "type": "Paragraph", 
-              "children": [
-                {
-                  "type": "TextBlock", 
-                  "children": [
-                    {
-                      "type": "Text", 
-                      "value": "Reverse object lookup. This simply means one thing: Given a mouse-coordinate I want to know which objects are ."
+                      "value": "Once you have constructed your scene object you can start adding actors to the scene. Actors can be primitive graphical objects (like a bar, a line, or a dot) or higher level objects that combine lower level ones (e.g. a Hyperbolic Tree). Actors typically take properties in their constructor. However for higher level objects you probably want them to be constructed with real domain data instead of simple graphical oriented properties (width, height etc.). You can decide on your own how you want to organize them."
                     }
                   ], 
                   "value": null
@@ -1139,7 +1107,351 @@
                   "children": [
                     {
                       "type": "Text", 
-                      "value": "Normally you'd have to iterate over all objects asking each one: Are you in the mouse coordinate range? We use a different approach. Aside from the regular canvas element w're drawing at we create another pixel buffer that draws let's say the negative of each object. So we have the regular canvas and the reverse- lookup pixel buffer containing masks for each graphical object."
+                      "value": "Add an Actor (Bar) to the scene:"
+                    }
+                  ], 
+                  "value": null
+                }, 
+                {
+                  "type": "Code", 
+                  "value": " var bar = new uv.Bar({\n   x: 30,\n   y: 50,\n   width: 30,\n   height: 80,\n   fillStyle: 'darkblue'\n });\n"
+                }, 
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "Add an additional bar as a child of the bar just created:"
+                    }
+                  ], 
+                  "value": null
+                }, 
+                {
+                  "type": "Code", 
+                  "value": " bar.add(new uv.Bar({\n   x: 50,\n   y: 20,\n   width: 20,\n   height: 80,\n   fillStyle: 'lightblue'\n }));\n"
+                }, 
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "The x and y coordinates are relative to the parent object. So an object does not know where it is located in the coordinate-space. It just renders itself at position 0,0. The positioning is done through matrix transformations, where for each object the current context (transformation matrix) is stored. That's how a SceneGraph works."
+                    }
+                  ], 
+                  "value": null
+                }
+              ], 
+              "value": null
+            }, 
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "Start the scene:"
+                    }
+                  ], 
+                  "value": null
+                }, 
+                {
+                  "type": "Code", 
+                  "value": " // defaults to 60 frames per second\n scene.start();\n"
+                }, 
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "Creating visualizations using the Scene API most often means implementing your own Actors. Let's re-create the Bar Actor from scratch, and add some interaction and animation later:"
+                    }
+                  ], 
+                  "value": null
+                }, 
+                {
+                  "type": "Code", 
+                  "value": " uv.Bar = function(properties) {\n   // super call\n   uv.Actor.call(this);\n   \n   // define your default properties\n   _.extend(this.properties, {\n     width: 40,\n     strokeWeight: 2,\n     strokeStyle: '#ccc'\n   }, properties);\n };\n"
+                }, 
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "Every Actor inherits from uv.Actor:"
+                    }
+                  ], 
+                  "value": null
+                }, 
+                {
+                  "type": "Code", 
+                  "value": " uv.Bar.prototype = Object.extend(uv.Actor);\n"
+                }
+              ], 
+              "value": null
+            }, 
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "Implement a draw method, which takes a Canvas 2D context:"
+                    }
+                  ], 
+                  "value": null
+                }, 
+                {
+                  "type": "Code", 
+                  "value": " uv.Bar.prototype.draw = function(ctx) {\n   ctx.fillRect(0, 0, this.properties.width, this.properties.height);\n };\n"
+                }
+              ], 
+              "value": null
+            }
+          ], 
+          "value": "Actors", 
+          "properties": {
+            "level": 2
+          }
+        }, 
+        {
+          "type": "Section", 
+          "children": [
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "Interaction is key in visualizations. Therefore Unveil.js aims to provide an abstraction for implementing interaction on your Actors. Unlike in SVG, with the Canvas API you can't attach event handlers on shapes directly. Instead you need to detect on your own, which objects are currently under the cursor. Usually you'd do this with some math, but there's a simpler approach that utilizes `isPointInPath()`:"
+                    }
+                  ], 
+                  "value": null
+                }
+              ], 
+              "value": null
+            }, 
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "With `isPointInPath()` you can check if the current mouse-position is inside the current working path."
+                    }
+                  ], 
+                  "value": null
+                }
+              ], 
+              "value": null
+            }, 
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "To make use of this you need to equip your Actors with an additional `drawMask()` method."
+                    }
+                  ], 
+                  "value": null
+                }
+              ], 
+              "value": null
+            }, 
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "Let's add some interaction to our Bar:"
+                    }
+                  ], 
+                  "value": null
+                }, 
+                {
+                  "type": "Code", 
+                  "value": " uv.Bar.prototype.drawMask = function(ctx) {\n   ctx.beginPath();\n   \n   ctx.moveTo(0, 0);\n   ctx.lineTo(this.properties.width, 0);\n   ctx.lineTo(this.properties.width, this.properties.height);\n   ctx.lineTo(0, this.properties.height);\n   ctx.lineTo(0, 0);\n };\n"
+                }, 
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "This simply draws an invisible rectangle. If you have a more complex object like a Star-Shape you can use a rectangle (also known as a bounding-box) as well, to mask your object for interaction. That's for the lazy folks. ;-)"
+                    }
+                  ], 
+                  "value": null
+                }
+              ], 
+              "value": null
+            }, 
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "Actors that have a `drawMask()` implementation can then be easily checked against the current cursor position."
+                    }
+                  ], 
+                  "value": null
+                }
+              ], 
+              "value": null
+            }, 
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "That's what is going on behind the curtain:"
+                    }
+                  ], 
+                  "value": null
+                }, 
+                {
+                  "type": "Code", 
+                  "value": " uv.Actor.prototype.checkActive = function(ctx, mouseX, mouseY) {\n   if (this.drawMask && ctx.isPointInPath) {\n     this.drawMask(ctx);\n     if (ctx.isPointInPath(mouseX, mouseY))\n       this.active = true;\n     else\n       this.active = false;\n   }\n };\n"
+                }
+              ], 
+              "value": null
+            }
+          ], 
+          "value": "Interaction", 
+          "properties": {
+            "level": 2
+          }
+        }, 
+        {
+          "type": "Section", 
+          "children": [
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "It's easy to add animation to your objects too. I've added a "
+                    }, 
+                    {
+                      "type": "Link", 
+                      "properties": {
+                        "alias": "Tween class"
+                      }, 
+                      "value": "http://quasipartikel.at/tween/"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": "I created some time ago to animate properties over time."
+                    }
+                  ], 
+                  "value": null
+                }
+              ], 
+              "value": null
+            }, 
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "To animate the height property of a Bar you simply use a Tween for that:"
+                    }
+                  ], 
+                  "value": null
+                }, 
+                {
+                  "type": "Code", 
+                  "value": " uv.Bar = function(properties) {\n   ...\n   this.t = new uv.Tween(this.properties, \"height\", \n     uv.Tween.strongEaseInOut, this.properties.height, \n     this.properties.height, 2);\n };\n"
+                }, 
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "The `updateHeight()` method is used to trigger the Tween:"
+                    }
+                  ], 
+                  "value": null
+                }, 
+                {
+                  "type": "Code", 
+                  "value": " uv.Bar.prototype.updateHeight = function(newHeight) {\n   this.t.continueTo(newHeight, 1.5);\n };\n"
+                }
+              ], 
+              "value": null
+            }, 
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "For now you need to manually trigger a Tween tick using the Actor#update() method:"
+                    }
+                  ], 
+                  "value": null
+                }, 
+                {
+                  "type": "Code", 
+                  "value": " uv.Bar.prototype.update = function() {\n   this.t.tick();\n };\n"
+                }, 
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "In your sketch you can use setTimeout() or setInterval() to trigger the `updateHeight()` method."
+                    }
+                  ], 
+                  "value": null
+                }, 
+                {
+                  "type": "Code", 
+                  "value": " setInterval(function() {\n   bar.updateHeight(70);\n }, 1000);\n"
+                }, 
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "Here's an example of "
+                    }, 
+                    {
+                      "type": "Link", 
+                      "properties": {
+                        "alias": "Moving Random Bars"
+                      }, 
+                      "value": "http://quasipartikel.at/unveil/examples/random_bars.html"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": ", that feature interaction and animation."
                     }
                   ], 
                   "value": null
@@ -1148,17 +1460,51 @@
               "value": null
             }
           ], 
-          "value": "Event handlers", 
+          "value": "Animation", 
           "properties": {
             "level": 2
           }
         }, 
         {
           "type": "Section", 
+          "children": [
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "The Scene API related code is pretty small (~\u00a0200 LOC). I don't plan to provide a full-featured Visualization library with helper functions, since there are existing libraries, that do a perfect job. I recommend using Protovis along with the Scene API. Actually, this library was created because Protovis does not support the canvas element. I also wanted an easier way to deal with interaction."
+                    }
+                  ], 
+                  "value": null
+                }
+              ], 
+              "value": null
+            }, 
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "To prevent from verbose and messy code, I do not provide any backward compatibility for older browsers. I'm trying to stay on the edge of technology. Therefore I focus on supporting the most recent versions of Google Chrome, Firefox, Safari. Currently mouse interaction is not working in Firefox. Please use a webkit-based browser for the moment."
+                    }
+                  ], 
+                  "value": null
+                }
+              ], 
+              "value": null
+            }
+          ], 
+          "value": "Hints", 
           "properties": {
             "level": 2
-          }, 
-          "value": "Motion tweening"
+          }
         }
       ], 
       "value": "Scene API", 
@@ -1194,18 +1540,7 @@
               "children": [
                 {
                   "type": "Text", 
-                  "value": "The Node API heavily relies on "
-                }, 
-                {
-                  "type": "Link", 
-                  "properties": {
-                    "alias": "SortedHash"
-                  }, 
-                  "value": "SORTEDHASH"
-                }, 
-                {
-                  "type": "Text", 
-                  "value": ", please have a look at the documentation before you start."
+                  "value": "The Node API heavily relies on SortedHash, please have a look at the documentation before you start."
                 }
               ], 
               "value": null
@@ -1475,7 +1810,7 @@
                   "children": [
                     {
                       "type": "Text", 
-                      "value": "map: @TODO"
+                      "value": "map:"
                     }
                   ], 
                   "value": null
@@ -1567,139 +1902,6 @@
                 {
                   "type": "Code", 
                   "value": " var mappedAndSortedItems = items.map(function (item) {\n       return item.slice(0, 3);\n     })\n     .sort(descendingOrder);\n \n selectedItems.at(0) // => 'Ger';\n selectedItems.at(2) // => 'Aus';\n"
-                }
-              ], 
-              "value": null
-            }, 
-            {
-              "type": "Paragraph", 
-              "children": [
-                {
-                  "type": "TextBlock", 
-                  "children": [
-                    {
-                      "type": "Text", 
-                      "value": "@COLL:          "
-                    }, 
-                    {
-                      "type": "Link", 
-                      "properties": {
-                        "alias": "Collection API"
-                      }, 
-                      "value": "http://github.com/michael/unveil/tree/master/src/collection/"
-                    }, 
-                    {
-                      "type": "Text", 
-                      "value": "@NODE:          "
-                    }, 
-                    {
-                      "type": "Link", 
-                      "properties": {
-                        "alias": "Node API"
-                      }, 
-                      "value": "http://github.com/michael/unveil/tree/master/src/node/"
-                    }, 
-                    {
-                      "type": "Text", 
-                      "value": "@SH:            "
-                    }, 
-                    {
-                      "type": "Link", 
-                      "properties": {
-                        "alias": "SortedHash API"
-                      }, 
-                      "value": "http://github.com/michael/unveil/tree/master/src/sorted_hash/"
-                    }, 
-                    {
-                      "type": "Text", 
-                      "value": "@SCATTERPLOT:   "
-                    }, 
-                    {
-                      "type": "Link", 
-                      "properties": {
-                        "alias": "Scatterplot"
-                      }, 
-                      "value": "http://github.com/michael/unveil/tree/master/src/visualization/visualizations/scatterplot.js"
-                    }, 
-                    {
-                      "type": "Text", 
-                      "value": "@LINECHART:     "
-                    }, 
-                    {
-                      "type": "Link", 
-                      "properties": {
-                        "alias": "Linechart"
-                      }, 
-                      "value": "http://github.com/michael/unveil/tree/master/src/visualization/visualizations/linechart.js"
-                    }, 
-                    {
-                      "type": "Text", 
-                      "value": "@PROTOVIS:      "
-                    }, 
-                    {
-                      "type": "Link", 
-                      "properties": {
-                        "alias": "Protovis"
-                      }, 
-                      "value": "http://protovis.org"
-                    }, 
-                    {
-                      "type": "Text", 
-                      "value": "@PROCESSINGJS:  "
-                    }, 
-                    {
-                      "type": "Link", 
-                      "properties": {
-                        "alias": "Processing.js"
-                      }, 
-                      "value": "http://processingjs.org"
-                    }, 
-                    {
-                      "type": "Text", 
-                      "value": "@COUNTRIES:     "
-                    }, 
-                    {
-                      "type": "Link", 
-                      "properties": {
-                        "alias": "Countries fetched from Freebase.com"
-                      }, 
-                      "value": "http://collections.quasipartikel.at/countries"
-                    }, 
-                    {
-                      "type": "Text", 
-                      "value": "@PLAYLISTS:     "
-                    }, 
-                    {
-                      "type": "Link", 
-                      "properties": {
-                        "alias": "Last.fm Playlists"
-                      }, 
-                      "value": "http://collections.quasipartikel.at/playlists"
-                    }, 
-                    {
-                      "type": "Text", 
-                      "value": "@NDOGEN:        "
-                    }, 
-                    {
-                      "type": "Link", 
-                      "properties": {
-                        "alias": "Ndogen"
-                      }, 
-                      "value": "http://github.com/oliver----/ndogen"
-                    }, 
-                    {
-                      "type": "Text", 
-                      "value": "@GROUPT:        "
-                    }, 
-                    {
-                      "type": "Link", 
-                      "properties": {
-                        "alias": "Group Transformer"
-                      }, 
-                      "value": "http://github.com/michael/unveil/blob/master/src/collection/transformers/group.js"
-                    }
-                  ], 
-                  "value": null
                 }
               ], 
               "value": null
