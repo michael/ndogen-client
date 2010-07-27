@@ -12,7 +12,14 @@
               "children": [
                 {
                   "type": "Text", 
-                  "value": "Unveil is a data exploration and visualization toolkit that utilizes data-driven software design."
+                  "properties": {
+                    "strong": true
+                  }, 
+                  "value": "Unveil"
+                }, 
+                {
+                  "type": "Text", 
+                  "value": " is a data exploration and visualization toolkit that utilizes data-driven software design."
                 }
               ], 
               "value": null
@@ -28,6 +35,63 @@
               "children": [
                 {
                   "type": "Text", 
+                  "value": "It features generic data abstraction through Collections, a unified interface for developing pluggable visualizations, and a Scenegraph implementation that simplifies the usage of the the "
+                }, 
+                {
+                  "type": "Link", 
+                  "properties": {
+                    "alias": "HTML 5 Canvas API"
+                  }, 
+                  "value": "http://dev.w3.org/html5/canvas-api/canvas-2d-api.html"
+                }, 
+                {
+                  "type": "Text", 
+                  "value": "."
+                }
+              ], 
+              "value": null
+            }
+          ], 
+          "value": null
+        }, 
+        {
+          "type": "Paragraph", 
+          "children": [
+            {
+              "type": "TextBlock", 
+              "children": [
+                {
+                  "type": "Text", 
+                  "value": "Although shipping with it's own little graphic library, the "
+                }, 
+                {
+                  "type": "Text", 
+                  "properties": {
+                    "emph": true
+                  }, 
+                  "value": "Scene API"
+                }, 
+                {
+                  "type": "Text", 
+                  "value": ", Unveil.js is designed to be used with any other visualization library. So in the first place, it suggests a different approach on how you deal with domain data in a visualization scenario."
+                }
+              ], 
+              "value": null
+            }
+          ], 
+          "value": null
+        }, 
+        {
+          "type": "Paragraph", 
+          "children": [
+            {
+              "type": "TextBlock", 
+              "children": [
+                {
+                  "type": "Text", 
+                  "properties": {
+                    "strong": true
+                  }, 
                   "value": "Note:"
                 }
               ], 
@@ -91,7 +155,29 @@
               "children": [
                 {
                   "type": "Text", 
-                  "value": "Collections are the main building block of the toolkit. A Collection is a simple data abstraction format where a data-set under investigation conforms to a collection of data items that describes all facets of the underlying data in a simple and universal way. You can think of a `Collection` as a table of data, except it provides precise information about the data contained (meta-data)."
+                  "value": "Collections are the main building block of the toolkit. A "
+                }, 
+                {
+                  "type": "Text", 
+                  "properties": {
+                    "emph": true
+                  }, 
+                  "value": "Collection"
+                }, 
+                {
+                  "type": "Text", 
+                  "value": " is a simple data abstraction format where a data-set under investigation conforms to a collection of data items that describes all facets of the underlying data in a simple and universal way. You can think of a "
+                }, 
+                {
+                  "type": "Text", 
+                  "properties": {
+                    "emph": true
+                  }, 
+                  "value": "Collection"
+                }, 
+                {
+                  "type": "Text", 
+                  "value": " as a table of data, except it provides precise information about the data contained (meta-data)."
                 }
               ], 
               "value": null
@@ -107,7 +193,14 @@
               "children": [
                 {
                   "type": "Text", 
-                  "value": "Collections are represented as a JSON string, which serves as an exchange format. Since JSON is heavily used in web-services, its perfectly suited for usage in a cloud-like scenario. Your collections can be constructed on the fly using live data from web services that either provides data directly in the Collection format or through a translator service that serves as an adapter for an existing service."
+                  "properties": {
+                    "emph": true
+                  }, 
+                  "value": "Collections"
+                }, 
+                {
+                  "type": "Text", 
+                  "value": " are represented as a JSON string, which serves as an exchange format. Since JSON is heavily used in web-services, its perfectly suited for usage in a cloud-like scenario. Your collections can be constructed on the fly using live data from web services that either provides data directly in the Collection format or through a translator service that serves as an adapter for an existing service."
                 }
               ], 
               "value": null
@@ -123,7 +216,29 @@
               "children": [
                 {
                   "type": "Text", 
-                  "value": "After passing the raw format to the `Collection` constructor, they are internally represented as a network of nodes (a graph so to say), that allows efficient operations on the Collection by traversing the graph instead of iterating over all items, values etc. Also operations like filtering, grouping etc. are already supported."
+                  "value": "After passing the raw format to the "
+                }, 
+                {
+                  "type": "Text", 
+                  "properties": {
+                    "emph": true
+                  }, 
+                  "value": "Collection"
+                }, 
+                {
+                  "type": "Text", 
+                  "value": " constructor, they are internally represented as a network of nodes (a graph so to say), that allows efficient operations on the "
+                }, 
+                {
+                  "type": "Text", 
+                  "properties": {
+                    "emph": true
+                  }, 
+                  "value": "Collection"
+                }, 
+                {
+                  "type": "Text", 
+                  "value": " by traversing the graph instead of iterating over all items, values etc. Also operations like filtering, grouping etc. are already supported."
                 }
               ], 
               "value": null
@@ -146,7 +261,29 @@
                   "children": [
                     {
                       "type": "Text", 
-                      "value": "The Collection constructor takes a collection represented as a JavaScript object, which conforms to a parsed JSON collection string. Once created you can query the information contained."
+                      "value": "The "
+                    }, 
+                    {
+                      "type": "Text", 
+                      "properties": {
+                        "emph": true
+                      }, 
+                      "value": "Collection"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": " constructor takes a collection represented as a JavaScript object, which conforms to a parsed "
+                    }, 
+                    {
+                      "type": "Text", 
+                      "properties": {
+                        "emph": true
+                      }, 
+                      "value": "JSON Collection String"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": ". Once created you can query the information contained."
                     }
                   ], 
                   "value": null
@@ -162,7 +299,18 @@
                   "children": [
                     {
                       "type": "Text", 
-                      "value": "The API features a simple object model for working with such in-memory collections. The collection object gives you access to the `Properties` and `Items` contained."
+                      "value": "The API features a simple object model for working with such in-memory collections. The "
+                    }, 
+                    {
+                      "type": "Text", 
+                      "properties": {
+                        "emph": true
+                      }, 
+                      "value": "Collection"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": " object gives you access to the properties and items contained."
                     }
                   ], 
                   "value": null
@@ -178,7 +326,84 @@
                   "children": [
                     {
                       "type": "Text", 
-                      "value": "Please make yourself familiar with the Node API, which is the data structure used for modeling the internal structure of a collection, which is a graph. Be aware that `Collection`, `Property`, `Item` and `Value` objects inherit from Node, so the full Node API is available on such objects."
+                      "value": "Please make yourself familiar with the "
+                    }, 
+                    {
+                      "type": "Text", 
+                      "properties": {
+                        "emph": true
+                      }, 
+                      "value": "Node API"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": ", which is the data structure used for modeling the internal structure of a collection, which is a graph. Be aware that "
+                    }, 
+                    {
+                      "type": "Text", 
+                      "properties": {
+                        "emph": true
+                      }, 
+                      "value": "Collection"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": ", "
+                    }, 
+                    {
+                      "type": "Text", 
+                      "properties": {
+                        "emph": true
+                      }, 
+                      "value": "Property"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": ", "
+                    }, 
+                    {
+                      "type": "Text", 
+                      "properties": {
+                        "emph": true
+                      }, 
+                      "value": "Item"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": " and "
+                    }, 
+                    {
+                      "type": "Text", 
+                      "properties": {
+                        "emph": true
+                      }, 
+                      "value": "Value"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": " objects inherit from "
+                    }, 
+                    {
+                      "type": "Text", 
+                      "properties": {
+                        "emph": true
+                      }, 
+                      "value": "Node"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": ", so the full "
+                    }, 
+                    {
+                      "type": "Text", 
+                      "properties": {
+                        "emph": true
+                      }, 
+                      "value": "Node API"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": " is available on such objects."
                     }
                   ], 
                   "value": null
@@ -203,7 +428,18 @@
                   "children": [
                     {
                       "type": "Text", 
-                      "value": "Meta-data (data about data) is represented as a set of properties that belongs to a collection. A property (cmp. a column in a table) holds a key, a name (cmp. a header of a column) and a type (telling whether the data is numeric or textual, etc.)."
+                      "value": "Meta-data (data about data) is represented as a set of properties that belongs to a collection. A "
+                    }, 
+                    {
+                      "type": "Text", 
+                      "properties": {
+                        "emph": true
+                      }, 
+                      "value": "Property"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": " (cmp. a column in a table) holds a key, a name (cmp. a header of a column) and a type (telling whether the data is numeric or textual, etc.)."
                     }
                   ], 
                   "value": null
@@ -219,6 +455,9 @@
                   "children": [
                     {
                       "type": "Text", 
+                      "properties": {
+                        "strong": true
+                      }, 
                       "value": "Access the Collection's properties:"
                     }
                   ], 
@@ -233,6 +472,9 @@
                   "children": [
                     {
                       "type": "Text", 
+                      "properties": {
+                        "strong": true
+                      }, 
                       "value": "You can also access them directly:"
                     }
                   ], 
@@ -247,6 +489,9 @@
                   "children": [
                     {
                       "type": "Text", 
+                      "properties": {
+                        "strong": true
+                      }, 
                       "value": "And you can use property inspection:"
                     }
                   ], 
@@ -292,6 +537,9 @@
                   "children": [
                     {
                       "type": "Text", 
+                      "properties": {
+                        "strong": true
+                      }, 
                       "value": "List all items:"
                     }
                   ], 
@@ -306,6 +554,9 @@
                   "children": [
                     {
                       "type": "Text", 
+                      "properties": {
+                        "strong": true
+                      }, 
                       "value": "Or access them directly:"
                     }
                   ], 
@@ -320,6 +571,9 @@
                   "children": [
                     {
                       "type": "Text", 
+                      "properties": {
+                        "strong": true
+                      }, 
                       "value": "Inspect item values:"
                     }
                   ], 
@@ -334,6 +588,9 @@
                   "children": [
                     {
                       "type": "Text", 
+                      "properties": {
+                        "strong": true
+                      }, 
                       "value": "Non-unique properties have more that one value:"
                     }
                   ], 
@@ -348,7 +605,27 @@
                   "children": [
                     {
                       "type": "Text", 
-                      "value": "You can easily iterate over values using `SortedHash#each`:"
+                      "children": [
+                        {
+                          "type": "Text", 
+                          "value": "With "
+                        }, 
+                        {
+                          "type": "Text", 
+                          "properties": {
+                            "emph": true
+                          }, 
+                          "value": "SortedHash#each"
+                        }, 
+                        {
+                          "type": "Text", 
+                          "value": " you can easily iterate over values:"
+                        }
+                      ], 
+                      "value": null, 
+                      "properties": {
+                        "strong": true
+                      }
                     }
                   ], 
                   "value": null
@@ -393,6 +670,9 @@
                   "children": [
                     {
                       "type": "Text", 
+                      "properties": {
+                        "strong": true
+                      }, 
                       "value": "List all items:"
                     }
                   ], 
@@ -407,7 +687,10 @@
                   "children": [
                     {
                       "type": "Text", 
-                      "value": "inspect the value 'Federal republic':"
+                      "properties": {
+                        "strong": true
+                      }, 
+                      "value": "Inspect the value 'Federal republic':"
                     }
                   ], 
                   "value": null
@@ -421,6 +704,9 @@
                   "children": [
                     {
                       "type": "Text", 
+                      "properties": {
+                        "strong": true
+                      }, 
                       "value": "Which other countries also have this government form?"
                     }
                   ], 
@@ -450,14 +736,25 @@
                   "children": [
                     {
                       "type": "Text", 
-                      "value": "Since OrderedHashes conform to a set in mathematical respect, some interesting operations can be performed."
+                      "value": "Since a "
+                    }, 
+                    {
+                      "type": "Text", 
+                      "properties": {
+                        "emph": true
+                      }, 
+                      "value": "SortedHash"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": " conforms to a set in mathematical respect, some interesting operations can be performed."
                     }
                   ], 
                   "value": null
                 }, 
                 {
                   "type": "Code", 
-                  "value": " var english = countries.all('item').select(function(key, i) {\n   return i.value('official_language') === 'English'; \n });\n   \n var french = countries.all('item').select(function(key, i) {\n   return i.value('official_language') === 'French'; \n });\n \n // english and french speaking countries\n var english_and_french = english.intersect(french); // => [Node#canada]\n \n // english or french speaking countries\n var english_or_french = english.union(french);\n // => [Node#uk, Node#france, Node#Switzerland, ...]\n"
+                  "value": " var english = countries.all('items').select(function(key, i) {\n   return i.value('official_language') === 'English'; \n });\n   \n var french = countries.all('items').select(function(key, i) {\n   return i.value('official_language') === 'French'; \n });\n \n // english and french speaking countries\n var english_and_french = english.intersect(french); // => [Node#canada]\n \n // english or french speaking countries\n var english_or_french = english.union(french);\n // => [Node#uk, Node#france, Node#Switzerland, ...]\n"
                 }
               ], 
               "value": null
@@ -479,7 +776,18 @@
                   "children": [
                     {
                       "type": "Text", 
-                      "value": "Transformers are used to do operations on the desired collection. A commonly used one is the group transformation."
+                      "value": "Transformers are used to do operations on the desired "
+                    }, 
+                    {
+                      "type": "Text", 
+                      "properties": {
+                        "emph": true
+                      }, 
+                      "value": "Collection"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": ". A commonly used one is the group transformation."
                     }
                   ], 
                   "value": null
@@ -495,7 +803,18 @@
                   "children": [
                     {
                       "type": "Text", 
-                      "value": "The following code does a grouping by the `official_language` property and sums up all numeric properties (like population, area). What you get is a modified collection that shows aggregated values for all occurring languages."
+                      "value": "The following code does a grouping by the "
+                    }, 
+                    {
+                      "type": "Text", 
+                      "properties": {
+                        "emph": true
+                      }, 
+                      "value": "official_language"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": " property and sums up all numeric properties (like population, area). What you get is a modified collection that shows aggregated values for all occurring languages."
                     }
                   ], 
                   "value": null
@@ -509,7 +828,10 @@
                   "children": [
                     {
                       "type": "Text", 
-                      "value": "The resulting collection looks like this"
+                      "properties": {
+                        "strong": true
+                      }, 
+                      "value": "The resulting collection looks like this:"
                     }
                   ], 
                   "value": null
@@ -529,7 +851,18 @@
                   "children": [
                     {
                       "type": "Text", 
-                      "value": "Transformers are non-destructive. The original collection is not modified unless you re-assign the result."
+                      "value": "Transformers are non-destructive. The original "
+                    }, 
+                    {
+                      "type": "Text", 
+                      "properties": {
+                        "emph": true
+                      }, 
+                      "value": "Collection"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": " is not modified unless you re-assign the result."
                     }
                   ], 
                   "value": null
@@ -555,7 +888,18 @@
                   "children": [
                     {
                       "type": "Text", 
-                      "value": "All you have to do is to assign a new property on the pv.Collection.transformers object, which holds a transformer function. This function takes an input collection and a params hash."
+                      "value": "All you have to do is to assign a new "
+                    }, 
+                    {
+                      "type": "Text", 
+                      "properties": {
+                        "emph": true
+                      }, 
+                      "value": "Property"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": " on the pv.Collection.transformers object, which holds a transformer function. This function takes an input collection and a params hash."
                     }
                   ], 
                   "value": null
@@ -596,6 +940,9 @@
                   "children": [
                     {
                       "type": "Text", 
+                      "properties": {
+                        "strong": true
+                      }, 
                       "value": "Transformer specification:"
                     }
                   ], 
@@ -612,7 +959,18 @@
                   "children": [
                     {
                       "type": "Text", 
-                      "value": "You need to define a specification for your transformation, which gives it a human readable name and describes the parameters your transformation takes."
+                      "value": "You need to define a specification for your "
+                    }, 
+                    {
+                      "type": "Text", 
+                      "properties": {
+                        "emph": true
+                      }, 
+                      "value": "Transformer"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": ", which gives it a human readable name and describes the parameters your transformation takes."
                     }
                   ], 
                   "value": null
@@ -641,7 +999,29 @@
                   "children": [
                     {
                       "type": "Text", 
-                      "value": "Some sample collections are available through Collectionize, a dedicated aggregator service, that translates interesting web services to the collection format."
+                      "value": "Some sample collections are available through "
+                    }, 
+                    {
+                      "type": "Link", 
+                      "properties": {
+                        "alias": "Collectionize"
+                      }, 
+                      "value": "http://github.com/michael/collectionize"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": ", a dedicated aggregator service, that translates interesting web services to the "
+                    }, 
+                    {
+                      "type": "Text", 
+                      "properties": {
+                        "emph": true
+                      }, 
+                      "value": "Collection"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": " format."
                     }
                   ], 
                   "value": null
@@ -657,6 +1037,9 @@
                   "children": [
                     {
                       "type": "Text", 
+                      "properties": {
+                        "strong": true
+                      }, 
                       "value": "Currently available:"
                     }
                   ], 
@@ -732,7 +1115,18 @@
               "children": [
                 {
                   "type": "Text", 
-                  "value": "The visualization API provides a simple abstraction layer for visualizations to ease the process of creating re-usable data-driven visualizations."
+                  "value": "The "
+                }, 
+                {
+                  "type": "Text", 
+                  "properties": {
+                    "emph": true
+                  }, 
+                  "value": "Visualization API"
+                }, 
+                {
+                  "type": "Text", 
+                  "value": " provides a simple abstraction layer for visualizations to ease the process of creating re-usable data-driven visualizations."
                 }
               ], 
               "value": null
@@ -748,7 +1142,18 @@
               "children": [
                 {
                   "type": "Text", 
-                  "value": "The appearance of the result is determined by the underlying data rather than by user defined plotting options. Visualizations directly access data trough a well defined interface, the Collection API, so there's no longer a gap between domain data and data used by the visualization engine."
+                  "value": "The appearance of a visualization is determined by the underlying data rather than by user defined plotting options. Visualizations directly access data trough a well defined interface, the "
+                }, 
+                {
+                  "type": "Text", 
+                  "properties": {
+                    "emph": true
+                  }, 
+                  "value": "Collection API"
+                }, 
+                {
+                  "type": "Text", 
+                  "value": ", so there's no longer a gap between domain data and data used by the visualization engine."
                 }
               ], 
               "value": null
@@ -764,7 +1169,18 @@
               "children": [
                 {
                   "type": "Text", 
-                  "value": "Such visualization can be re-used in terms of putting in arbitrary data in. This works as long as the data is a valid Collection and satisfies the visualization specification (some visualizations exclusively use numbers as their input, others use dates (e.g. Timeline plots), and so on...)."
+                  "value": "Such visualization can be re-used in terms of putting arbitrary data in. This works as long as the data is a valid "
+                }, 
+                {
+                  "type": "Text", 
+                  "properties": {
+                    "emph": true
+                  }, 
+                  "value": "Collection"
+                }, 
+                {
+                  "type": "Text", 
+                  "value": " and satisfies the visualization specification (some visualizations exclusively use numbers as their input, others use dates (e.g. Timeline plots), and so on...)."
                 }
               ], 
               "value": null
@@ -802,7 +1218,18 @@
                   "children": [
                     {
                       "type": "Text", 
-                      "value": "In order to create your own visualizations you need to setup a new class that inherits from uv.Visualization."
+                      "value": "In order to create your own visualizations you need to setup a new class that inherits from "
+                    }, 
+                    {
+                      "type": "Text", 
+                      "properties": {
+                        "emph": true
+                      }, 
+                      "value": "uv.Visualization"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": "."
                     }
                   ], 
                   "value": null
@@ -816,7 +1243,18 @@
                   "children": [
                     {
                       "type": "Text", 
-                      "value": "All you have to do is to imlement `render()`. It's totally up to you whether you want to use a visualization library (I can recommend "
+                      "value": "All you have to do is to implement "
+                    }, 
+                    {
+                      "type": "Text", 
+                      "properties": {
+                        "emph": true
+                      }, 
+                      "value": "render()"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": ". It's totally up to you whether you want to use the included Scene API or any other visualization library (I can recommend "
                     }, 
                     {
                       "type": "Link", 
@@ -827,7 +1265,7 @@
                     }, 
                     {
                       "type": "Text", 
-                      "value": " and "
+                      "value": ", "
                     }, 
                     {
                       "type": "Link", 
@@ -838,7 +1276,18 @@
                     }, 
                     {
                       "type": "Text", 
-                      "value": ") or work with the native API's (Canvas, SVG)."
+                      "value": " and "
+                    }, 
+                    {
+                      "type": "Link", 
+                      "properties": {
+                        "alias": "Scene.js"
+                      }, 
+                      "value": "http://scenejs.org"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": ") or work with the native API's (Canvas, SVG, WebGL)."
                     }
                   ], 
                   "value": null
@@ -847,60 +1296,20 @@
               "value": null
             }, 
             {
-              "type": "Paragraph", 
+              "type": "Section", 
               "children": [
                 {
-                  "type": "TextBlock", 
+                  "type": "Paragraph", 
                   "children": [
                     {
-                      "type": "Text", 
-                      "value": "Visualization Specification:"
-                    }
-                  ], 
-                  "value": null
-                }
-              ], 
-              "value": null
-            }, 
-            {
-              "type": "Paragraph", 
-              "children": [
-                {
-                  "type": "TextBlock", 
-                  "children": [
-                    {
-                      "type": "Text", 
-                      "value": "There are various types of visualizations. Some exclusively use numbers as their input, some use dates (e.g. Timeline plots) others visualize relationships between data items (e.g. which countries share the same currency). There are further visualizations that use various combinations of measure types."
-                    }
-                  ], 
-                  "value": null
-                }
-              ], 
-              "value": null
-            }, 
-            {
-              "type": "Paragraph", 
-              "children": [
-                {
-                  "type": "TextBlock", 
-                  "children": [
-                    {
-                      "type": "Text", 
-                      "value": "In order to verify that the current selection of measures can be displayed by the chosen visualization you have to define a specification like this:"
-                    }
-                  ], 
-                  "value": null
-                }, 
-                {
-                  "type": "Code", 
-                  "value": " // Displays 1..n number properties\n uv.Barchart.spec = {\n   measures: [\n     {\n       types: ['number'],\n       unique: true,\n       cardinality: 1      \n     },\n     {\n       types: ['number'],\n       unique: true,\n       cardinality: \"*\"\n     }\n   ]\n };\n"
-                }, 
-                {
-                  "type": "TextBlock", 
-                  "children": [
-                    {
-                      "type": "Text", 
-                      "value": "For reference have a look at the implementations of `Scatterplot` and `Linechart`."
+                      "type": "TextBlock", 
+                      "children": [
+                        {
+                          "type": "Text", 
+                          "value": "There are various types of visualizations. Some exclusively use numbers as their input, some use dates (e.g. Timeline plots) others visualize relationships between data items (e.g. which countries share the same currency). There are further visualizations that use various combinations of measure types."
+                        }
+                      ], 
+                      "value": null
                     }
                   ], 
                   "value": null
@@ -909,39 +1318,100 @@
                   "type": "Paragraph", 
                   "children": [
                     {
-                      "type": "List", 
+                      "type": "TextBlock", 
                       "children": [
                         {
-                          "type": "ListItem", 
+                          "type": "Text", 
+                          "value": "In order to verify that the current selection of measures can be displayed by the chosen visualization you have to define a specification like this:"
+                        }
+                      ], 
+                      "value": null
+                    }, 
+                    {
+                      "type": "Code", 
+                      "value": " // Displays 1..n number properties\n uv.Barchart.spec = {\n   measures: [\n     {\n       types: ['number'],\n       unique: true,\n       cardinality: 1      \n     },\n     {\n       types: ['number'],\n       unique: true,\n       cardinality: \"*\"\n     }\n   ]\n };\n"
+                    }, 
+                    {
+                      "type": "TextBlock", 
+                      "children": [
+                        {
+                          "type": "Text", 
                           "children": [
                             {
-                              "type": "TextBlock", 
+                              "type": "Text", 
+                              "value": "Have a look at the implementations of "
+                            }, 
+                            {
+                              "type": "Text", 
+                              "properties": {
+                                "emph": true
+                              }, 
+                              "value": "Scatterplot"
+                            }, 
+                            {
+                              "type": "Text", 
+                              "value": " and "
+                            }, 
+                            {
+                              "type": "Text", 
+                              "properties": {
+                                "emph": true
+                              }, 
+                              "value": "Linechart"
+                            }, 
+                            {
+                              "type": "Text", 
+                              "value": " for reference:"
+                            }
+                          ], 
+                          "value": null, 
+                          "properties": {
+                            "strong": true
+                          }
+                        }
+                      ], 
+                      "value": null
+                    }, 
+                    {
+                      "type": "Paragraph", 
+                      "children": [
+                        {
+                          "type": "List", 
+                          "children": [
+                            {
+                              "type": "ListItem", 
                               "children": [
                                 {
-                                  "type": "Link", 
-                                  "properties": {
-                                    "alias": "Scatterplot"
-                                  }, 
-                                  "value": "http://github.com/michael/unveil/tree/master/src/visualization/visualizations/scatterplot.js"
+                                  "type": "TextBlock", 
+                                  "children": [
+                                    {
+                                      "type": "Link", 
+                                      "properties": {
+                                        "alias": "Scatterplot"
+                                      }, 
+                                      "value": "http://github.com/michael/unveil/tree/master/src/visualization/visualizations/scatterplot.js"
+                                    }
+                                  ], 
+                                  "value": null
                                 }
                               ], 
                               "value": null
-                            }
-                          ], 
-                          "value": null
-                        }, 
-                        {
-                          "type": "ListItem", 
-                          "children": [
+                            }, 
                             {
-                              "type": "TextBlock", 
+                              "type": "ListItem", 
                               "children": [
                                 {
-                                  "type": "Link", 
-                                  "properties": {
-                                    "alias": "Linechart"
-                                  }, 
-                                  "value": "http://github.com/michael/unveil/tree/master/src/visualization/visualizations/linechart.js"
+                                  "type": "TextBlock", 
+                                  "children": [
+                                    {
+                                      "type": "Link", 
+                                      "properties": {
+                                        "alias": "Linechart"
+                                      }, 
+                                      "value": "http://github.com/michael/unveil/tree/master/src/visualization/visualizations/linechart.js"
+                                    }
+                                  ], 
+                                  "value": null
                                 }
                               ], 
                               "value": null
@@ -956,7 +1426,10 @@
                   "value": null
                 }
               ], 
-              "value": null
+              "value": "Visualization Specification", 
+              "properties": {
+                "level": 3
+              }
             }
           ], 
           "value": "Creating visualizations", 
@@ -982,7 +1455,18 @@
               "children": [
                 {
                   "type": "Text", 
-                  "value": "Inspired by various great visualization libraries (Protovis, Processing.js) I created my own rather low level visualization framework that is basically an implementation of a SceneGraph on top of the HTML5 Canvas API."
+                  "value": "Inspired by various great visualization libraries (Protovis, Processing.js), I created my own rather low level graphical library that is basically an implementation of a Scenegraph on top of the "
+                }, 
+                {
+                  "type": "Text", 
+                  "properties": {
+                    "emph": true
+                  }, 
+                  "value": "HTML5 Canvas API"
+                }, 
+                {
+                  "type": "Text", 
+                  "value": "."
                 }
               ], 
               "value": null
@@ -998,6 +1482,25 @@
               "children": [
                 {
                   "type": "Text", 
+                  "value": "It's more a framework that helps you managing complexity rather than a full-featured graphical visualization library."
+                }
+              ], 
+              "value": null
+            }
+          ], 
+          "value": null
+        }, 
+        {
+          "type": "Paragraph", 
+          "children": [
+            {
+              "type": "TextBlock", 
+              "children": [
+                {
+                  "type": "Text", 
+                  "properties": {
+                    "strong": true
+                  }, 
                   "value": "I focussed on two core principles:"
                 }
               ], 
@@ -1052,7 +1555,18 @@
               "children": [
                 {
                   "type": "Text", 
-                  "value": "Object oriented in terms of thinking in graphical objects and modularizing code, declarative in terms of using, configuring and combining existing actors (graphical objects) and attach them to the scene graph."
+                  "value": "Object oriented in terms of thinking in graphical objects and modularizing code, declarative in terms of using, configuring and combining existing "
+                }, 
+                {
+                  "type": "Text", 
+                  "properties": {
+                    "emph": true
+                  }, 
+                  "value": "Actors"
+                }, 
+                {
+                  "type": "Text", 
+                  "value": "(graphical objects) and attach them to the Scenegraph."
                 }
               ], 
               "value": null
@@ -1068,6 +1582,9 @@
               "children": [
                 {
                   "type": "Text", 
+                  "properties": {
+                    "strong": true
+                  }, 
                   "value": "Creating a scene is easy:"
                 }
               ], 
@@ -1075,7 +1592,7 @@
             }, 
             {
               "type": "Code", 
-              "value": " var scene = new uv.Scene({\n       width: 800,\n       height: 400\n     });\n"
+              "value": " var scene = new uv.Scene({\n       fillStyle: '#ccc'\n     });\n"
             }
           ], 
           "value": null
@@ -1091,7 +1608,29 @@
                   "children": [
                     {
                       "type": "Text", 
-                      "value": "Once you have constructed your scene object you can start adding actors to the scene. Actors can be primitive graphical objects (like a bar, a line, or a dot) or higher level objects that combine lower level ones (e.g. a Hyperbolic Tree). Actors typically take properties in their constructor. However for higher level objects you probably want them to be constructed with real domain data instead of simple graphical oriented properties (width, height etc.). You can decide on your own how you want to organize them."
+                      "value": "Once you have constructed your "
+                    }, 
+                    {
+                      "type": "Text", 
+                      "properties": {
+                        "emph": true
+                      }, 
+                      "value": "Scene"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": " object, you can start adding actors."
+                    }, 
+                    {
+                      "type": "Text", 
+                      "properties": {
+                        "emph": true
+                      }, 
+                      "value": "Actors"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": " can be primitive graphical objects (like a Bar, a Line, or a Dot) or higher level objects that combine lower level ones (e.g. a Hyperbolic Tree). Actors typically take properties in their constructor. However for higher level objects you probably want them to be constructed with real domain data instead of simple graphical oriented properties (width, height etc.). You can decide on your own how you want to shape the interface."
                     }
                   ], 
                   "value": null
@@ -1107,6 +1646,9 @@
                   "children": [
                     {
                       "type": "Text", 
+                      "properties": {
+                        "strong": true
+                      }, 
                       "value": "Add an Actor (Bar) to the scene:"
                     }
                   ], 
@@ -1121,6 +1663,9 @@
                   "children": [
                     {
                       "type": "Text", 
+                      "properties": {
+                        "strong": true
+                      }, 
                       "value": "Add an additional bar as a child of the bar just created:"
                     }
                   ], 
@@ -1135,7 +1680,7 @@
                   "children": [
                     {
                       "type": "Text", 
-                      "value": "The x and y coordinates are relative to the parent object. So an object does not know where it is located in the coordinate-space. It just renders itself at position 0,0. The positioning is done through matrix transformations, where for each object the current context (transformation matrix) is stored. That's how a SceneGraph works."
+                      "value": "The x and y coordinates are relative to the parent object. So an object does not know where it is located in the coordinate-space. It just renders itself at position 0,0. The positioning is done through matrix transformations, where for each object the current context (transformation matrix) is being calculated on every frame. That's how a SceneGraph works."
                     }
                   ], 
                   "value": null
@@ -1151,6 +1696,69 @@
                   "children": [
                     {
                       "type": "Text", 
+                      "properties": {
+                        "strong": true
+                      }, 
+                      "value": "Specify an output display:"
+                    }
+                  ], 
+                  "value": null
+                }, 
+                {
+                  "type": "Code", 
+                  "value": " scene.display({\n   container: $('#plotarea'),\n   width: 800,\n   height: 300,\n   zooming: true,\n   paning: true\n });\n"
+                }, 
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "The scene (world-coordinates) can be projected to one or many displays (canvas elements), that have a local coordinate system. Each display can be modified (zoomed, paned, etc.) independently. This conforms to a view transformation in computer-game-engine-like API's (camera analogy)."
+                    }
+                  ], 
+                  "value": null
+                }
+              ], 
+              "value": null
+            }, 
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "You can see multiple displays in action "
+                    }, 
+                    {
+                      "type": "Link", 
+                      "properties": {
+                        "alias": "here"
+                      }, 
+                      "value": "http://quasipartikel.at/unveil/examples/multiple_displays.html"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": "."
+                    }
+                  ], 
+                  "value": null
+                }
+              ], 
+              "value": null
+            }, 
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "properties": {
+                        "strong": true
+                      }, 
                       "value": "Start the scene:"
                     }
                   ], 
@@ -1158,27 +1766,112 @@
                 }, 
                 {
                   "type": "Code", 
-                  "value": " // defaults to 60 frames per second\n scene.start();\n"
+                  "value": " // defaults to 10 frames per second\n scene.start();\n"
                 }, 
                 {
                   "type": "TextBlock", 
                   "children": [
                     {
                       "type": "Text", 
-                      "value": "Creating visualizations using the Scene API most often means implementing your own Actors. Let's re-create the Bar Actor from scratch, and add some interaction and animation later:"
+                      "value": "The scene automatically refreshes each attached display appropriately (on every frame)."
+                    }
+                  ], 
+                  "value": null
+                }
+              ], 
+              "value": null
+            }, 
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "properties": {
+                        "strong": true
+                      }, 
+                      "value": "Create your own actors:"
+                    }
+                  ], 
+                  "value": null
+                }
+              ], 
+              "value": null
+            }, 
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "Creating visualizations using the "
+                    }, 
+                    {
+                      "type": "Text", 
+                      "properties": {
+                        "emph": true
+                      }, 
+                      "value": "Scene API"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": " most often means implementing your own "
+                    }, 
+                    {
+                      "type": "Text", 
+                      "properties": {
+                        "emph": true
+                      }, 
+                      "value": "Actors"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": ". I'd see the creation of custom Actors as a fundamental part of the visualization creation process. So instead of combining only existing pre-implemented objects, you're encouraged to create your own ones, suitable for your needs."
+                    }
+                  ], 
+                  "value": null
+                }
+              ], 
+              "value": null
+            }, 
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "properties": {
+                        "strong": true
+                      }, 
+                      "value": "Let's re-create the Bar Actor from scratch, and add some interaction and animation later:"
                     }
                   ], 
                   "value": null
                 }, 
                 {
                   "type": "Code", 
-                  "value": " uv.Bar = function(properties) {\n   // super call\n   uv.Actor.call(this);\n   \n   // define your default properties\n   _.extend(this.properties, {\n     width: 40,\n     strokeWeight: 2,\n     strokeStyle: '#ccc'\n   }, properties);\n };\n"
-                }, 
+                  "value": " uv.Bar = function(properties) {\n   // super call\n   uv.Actor.call(this, _.extend({\n     width: 30,\n     height: 50,\n     strokeWeight: 2,\n     strokeStyle: '#000',\n     fillStyle: '#ccc'\n   }, properties));\n };\n"
+                }
+              ], 
+              "value": null
+            }, 
+            {
+              "type": "Paragraph", 
+              "children": [
                 {
                   "type": "TextBlock", 
                   "children": [
                     {
                       "type": "Text", 
+                      "properties": {
+                        "strong": true
+                      }, 
                       "value": "Every Actor inherits from uv.Actor:"
                     }
                   ], 
@@ -1199,6 +1892,9 @@
                   "children": [
                     {
                       "type": "Text", 
+                      "properties": {
+                        "strong": true
+                      }, 
                       "value": "Implement a draw method, which takes a Canvas 2D context:"
                     }
                   ], 
@@ -1228,7 +1924,29 @@
                   "children": [
                     {
                       "type": "Text", 
-                      "value": "Interaction is key in visualizations. Therefore Unveil.js aims to provide an abstraction for implementing interaction on your Actors. Unlike in SVG, with the Canvas API you can't attach event handlers on shapes directly. Instead you need to detect on your own, which objects are currently under the cursor. Usually you'd do this with some math, but there's a simpler approach that utilizes `isPointInPath()`:"
+                      "value": "Interaction is key in visualizations. Therefore Unveil.js aims to provide an abstraction for implementing interaction on your "
+                    }, 
+                    {
+                      "type": "Text", 
+                      "properties": {
+                        "emph": true
+                      }, 
+                      "value": "Actors"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": ". Unlike in SVG, with the Canvas API you can't attach event handlers to shapes directly. Instead you need to detect on your own, which objects are currently under the cursor. Usually you'd do this with some math, but there's a simpler approach that utilizes "
+                    }, 
+                    {
+                      "type": "Text", 
+                      "properties": {
+                        "emph": true
+                      }, 
+                      "value": "isPointInPath()"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": "."
                     }
                   ], 
                   "value": null
@@ -1244,7 +1962,18 @@
                   "children": [
                     {
                       "type": "Text", 
-                      "value": "With `isPointInPath()` you can check if the current mouse-position is inside the current working path."
+                      "value": "With "
+                    }, 
+                    {
+                      "type": "Text", 
+                      "properties": {
+                        "emph": true
+                      }, 
+                      "value": "isPointInPath()"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": " you can check if the current mouse-position is inside the current working path."
                     }
                   ], 
                   "value": null
@@ -1260,7 +1989,18 @@
                   "children": [
                     {
                       "type": "Text", 
-                      "value": "To make use of this you need to equip your Actors with an additional `drawMask()` method."
+                      "value": "To make use of this you need to equip your Actors with an additional"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "properties": {
+                        "emph": true
+                      }, 
+                      "value": "drawMask()"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": " method."
                     }
                   ], 
                   "value": null
@@ -1276,6 +2016,9 @@
                   "children": [
                     {
                       "type": "Text", 
+                      "properties": {
+                        "strong": true
+                      }, 
                       "value": "Let's add some interaction to our Bar:"
                     }
                   ], 
@@ -1290,7 +2033,7 @@
                   "children": [
                     {
                       "type": "Text", 
-                      "value": "This simply draws an invisible rectangle. If you have a more complex object like a Star-Shape you can use a rectangle (also known as a bounding-box) as well, to mask your object for interaction. That's for the lazy folks. ;-)"
+                      "value": "This simply draws an invisible rectangle. If you have a more complex object like a star-shape you can use a rectangle (also known as a bounding-box) as well, to mask your object for interaction. However, that's for the lazy folks. ;-)"
                     }
                   ], 
                   "value": null
@@ -1306,7 +2049,18 @@
                   "children": [
                     {
                       "type": "Text", 
-                      "value": "Actors that have a `drawMask()` implementation can then be easily checked against the current cursor position."
+                      "value": "Actors that have a "
+                    }, 
+                    {
+                      "type": "Text", 
+                      "properties": {
+                        "emph": true
+                      }, 
+                      "value": "drawMask()"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": " implementation can then be easily checked against the current cursor position."
                     }
                   ], 
                   "value": null
@@ -1322,6 +2076,9 @@
                   "children": [
                     {
                       "type": "Text", 
+                      "properties": {
+                        "strong": true
+                      }, 
                       "value": "That's what is going on behind the curtain:"
                     }
                   ], 
@@ -1378,6 +2135,9 @@
                   "children": [
                     {
                       "type": "Text", 
+                      "properties": {
+                        "strong": true
+                      }, 
                       "value": "To animate the height property of a Bar you simply use a Tween for that:"
                     }
                   ], 
@@ -1385,14 +2145,34 @@
                 }, 
                 {
                   "type": "Code", 
-                  "value": " uv.Bar = function(properties) {\n   ...\n   this.t = new uv.Tween(this.properties, \"height\", \n     uv.Tween.strongEaseInOut, this.properties.height, \n     this.properties.height, 2);\n };\n"
+                  "value": " uv.Bar = function(properties) {\n   ...\n   this.t = new uv.Tween({\n     object: this.properties,\n     property: 'height'\n   });\n };\n"
                 }, 
                 {
                   "type": "TextBlock", 
                   "children": [
                     {
                       "type": "Text", 
-                      "value": "The `updateHeight()` method is used to trigger the Tween:"
+                      "children": [
+                        {
+                          "type": "Text", 
+                          "value": "The "
+                        }, 
+                        {
+                          "type": "Text", 
+                          "properties": {
+                            "emph": true
+                          }, 
+                          "value": "updateHeight()"
+                        }, 
+                        {
+                          "type": "Text", 
+                          "value": " method is used to trigger the Tween:"
+                        }
+                      ], 
+                      "value": null, 
+                      "properties": {
+                        "strong": true
+                      }
                     }
                   ], 
                   "value": null
@@ -1412,7 +2192,27 @@
                   "children": [
                     {
                       "type": "Text", 
-                      "value": "For now you need to manually trigger a Tween tick using the Actor#update() method:"
+                      "children": [
+                        {
+                          "type": "Text", 
+                          "value": "For now you need to manually trigger a Tween tick using the "
+                        }, 
+                        {
+                          "type": "Text", 
+                          "properties": {
+                            "emph": true
+                          }, 
+                          "value": "Actor#update()"
+                        }, 
+                        {
+                          "type": "Text", 
+                          "value": " method:"
+                        }
+                      ], 
+                      "value": null, 
+                      "properties": {
+                        "strong": true
+                      }
                     }
                   ], 
                   "value": null
@@ -1426,7 +2226,49 @@
                   "children": [
                     {
                       "type": "Text", 
-                      "value": "In your sketch you can use setTimeout() or setInterval() to trigger the `updateHeight()` method."
+                      "children": [
+                        {
+                          "type": "Text", 
+                          "value": "In your sketch you can use "
+                        }, 
+                        {
+                          "type": "Text", 
+                          "properties": {
+                            "emph": true
+                          }, 
+                          "value": "setTimeout()"
+                        }, 
+                        {
+                          "type": "Text", 
+                          "value": " or "
+                        }, 
+                        {
+                          "type": "Text", 
+                          "properties": {
+                            "emph": true
+                          }, 
+                          "value": "setInterval()"
+                        }, 
+                        {
+                          "type": "Text", 
+                          "value": " to trigger the "
+                        }, 
+                        {
+                          "type": "Text", 
+                          "properties": {
+                            "emph": true
+                          }, 
+                          "value": "updateHeight()"
+                        }, 
+                        {
+                          "type": "Text", 
+                          "value": " method:"
+                        }
+                      ], 
+                      "value": null, 
+                      "properties": {
+                        "strong": true
+                      }
                     }
                   ], 
                   "value": null
@@ -1476,7 +2318,14 @@
                   "children": [
                     {
                       "type": "Text", 
-                      "value": "The Scene API related code is pretty small (~\u00a0200 LOC). I don't plan to provide a full-featured Visualization library with helper functions, since there are existing libraries, that do a perfect job. I recommend using Protovis along with the Scene API. Actually, this library was created because Protovis does not support the canvas element. I also wanted an easier way to deal with interaction."
+                      "properties": {
+                        "emph": true
+                      }, 
+                      "value": "Commands"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": " are used to modify properties on the scene. They can be executed one or many times, and they can be unexecuted to recover the original state."
                     }
                   ], 
                   "value": null
@@ -1492,7 +2341,446 @@
                   "children": [
                     {
                       "type": "Text", 
-                      "value": "To prevent from verbose and messy code, I do not provide any backward compatibility for older browsers. I'm trying to stay on the edge of technology. Therefore I focus on supporting the most recent versions of Google Chrome, Firefox, Safari. Currently mouse interaction is not working in Firefox. Please use a webkit-based browser for the moment."
+                      "value": "Such commands are a powerful abstraction for modifying state. Implement your own commands whenever it makes sense."
+                    }
+                  ], 
+                  "value": null
+                }
+              ], 
+              "value": null
+            }, 
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "What always annoyed me is the problem of high CPU-consumption that canvas-based visualizations typically have. The reason for that is, that if your scene runs on 60 fps, then even when there's no animation or interaction taking place, the "
+                    }, 
+                    {
+                      "type": "Text", 
+                      "properties": {
+                        "emph": true
+                      }, 
+                      "value": "render()"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": " method is called 60 times a second."
+                    }
+                  ], 
+                  "value": null
+                }
+              ], 
+              "value": null
+            }, 
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "children": [
+                        {
+                          "type": "Text", 
+                          "value": "I could solve this by implementing a "
+                        }, 
+                        {
+                          "type": "Text", 
+                          "properties": {
+                            "emph": true
+                          }, 
+                          "value": "RequestFramerate"
+                        }, 
+                        {
+                          "type": "Text", 
+                          "value": " command:"
+                        }
+                      ], 
+                      "value": null, 
+                      "properties": {
+                        "strong": true
+                      }
+                    }
+                  ], 
+                  "value": null
+                }, 
+                {
+                  "type": "Code", 
+                  "value": " uv.cmds.RequestFramerate = function(scene, opts) {\n   this.scene = scene;\n   this.requests = 0;\n   this.framerate = opts.framerate;\n   this.originalFramerate = this.scene.framerate;\n };\n \n uv.cmds.RequestFramerate.className = 'RequestFramerate';\n \n uv.cmds.RequestFramerate.prototype.execute = function() {\n   this.requests += 1;\n   this.scene.framerate = this.framerate;\n };\n \n uv.cmds.RequestFramerate.prototype.unexecute = function() {\n   this.requests -= 1;\n   if (this.requests <= 0) {\n     this.scene.framerate = this.originalFramerate;\n   }\n };\n"
+                }, 
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "properties": {
+                        "strong": true
+                      }, 
+                      "value": "Having that command in place, we need to register it on the scene: "
+                    }
+                  ], 
+                  "value": null
+                }, 
+                {
+                  "type": "Code", 
+                  "value": " scene.register(uv.cmds.RequestFramrate, { framerate: 60 }); \n"
+                }, 
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "properties": {
+                        "strong": true
+                      }, 
+                      "value": "Then this command can be excuted and unexecued on demand.:"
+                    }
+                  ], 
+                  "value": null
+                }, 
+                {
+                  "type": "Code", 
+                  "value": " t  = new uv.Tween({...});\n t.on('start', function() { that.scene.execute(uv.cmds.RequestFramerate); }); \n t.on('finish', function() { that.scene.unexecute(uv.cmds.RequestFramerate); }); \n"
+                }
+              ], 
+              "value": null
+            }, 
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "properties": {
+                        "strong": true
+                      }, 
+                      "value": "It works like this:"
+                    }
+                  ], 
+                  "value": null
+                }
+              ], 
+              "value": null
+            }, 
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "The scene by default runs in idle mode (say 10fps), which is enough to deal with mouse interaction. If an operation (in this case a Motion Tween) needs high speed (60fps) it requests it, like if it would request a resource."
+                    }
+                  ], 
+                  "value": null
+                }
+              ], 
+              "value": null
+            }, 
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "The "
+                    }, 
+                    {
+                      "type": "Text", 
+                      "properties": {
+                        "emph": true
+                      }, 
+                      "value": "Tween"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": " class (like any other operation that needs full power) needs callbacks for start and finish events, that can be used to request high speed (on start) and release this demand when 'finish' is fired."
+                    }
+                  ], 
+                  "value": null
+                }
+              ], 
+              "value": null
+            }, 
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "It basically works like a semaphore, where each request increments a "
+                    }, 
+                    {
+                      "type": "Text", 
+                      "properties": {
+                        "emph": true
+                      }, 
+                      "value": "requests"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": "counter, and each release decrements it. When all motion tweens have finished"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "properties": {
+                        "emph": true
+                      }, 
+                      "value": "requests"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": " is zero. The current framerate then depends on the value of"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "properties": {
+                        "emph": true
+                      }, 
+                      "value": "requests"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": " (0 = idle mode, > 0 = highspeed / full throttle mode)."
+                    }
+                  ], 
+                  "value": null
+                }
+              ], 
+              "value": null
+            }, 
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "I've updated the "
+                    }, 
+                    {
+                      "type": "Link", 
+                      "properties": {
+                        "alias": "stacks example"
+                      }, 
+                      "value": "http://quasipartikel.at/unveil/examples/stacks.html"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": ", that now uses 60fps on demand (10fps per default). Thankfully lots of CPU cycles could be saved. ;-)"
+                    }
+                  ], 
+                  "value": null
+                }
+              ], 
+              "value": null
+            }
+          ], 
+          "value": "Commands", 
+          "properties": {
+            "level": 2
+          }
+        }, 
+        {
+          "type": "Section", 
+          "children": [
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "While most often specifying properties (x, y, scaleX, scaleY, rotation) on the an Actor suffices, there may be cases where you need more control. Therefore Actors expose a so called "
+                    }, 
+                    {
+                      "type": "Text", 
+                      "properties": {
+                        "emph": true
+                      }, 
+                      "value": "Modification Matrix"
+                    }, 
+                    {
+                      "type": "Text", 
+                      "value": ", which can be directly modified by the user."
+                    }
+                  ], 
+                  "value": null
+                }
+              ], 
+              "value": null
+            }, 
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "properties": {
+                        "strong": true
+                      }, 
+                      "value": "To scale and rotate an object around a point, you can specify a series of matrix transforms:"
+                    }
+                  ], 
+                  "value": null
+                }, 
+                {
+                  "type": "Code", 
+                  "value": " var b = new uv.Bar({...});\n // move the coordinate system to the desired point\n b.translate(40,40);\n // scale around this point (= new origin)\n b.scale(1.5, 1.5);\n // rotate 45\u00b0\n b.rotate(uv.PI/4);\n // move the coordinate system back\n b.translate(-40, -40);\n"
+                }
+              ], 
+              "value": null
+            }, 
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "To calculate the resulting transformation matrix for drawing, it is initialized with the specified properties and then multiplied with the modification matrix."
+                    }
+                  ], 
+                  "value": null
+                }
+              ], 
+              "value": null
+            }
+          ], 
+          "value": "Modification Matrix", 
+          "properties": {
+            "level": 2
+          }
+        }, 
+        {
+          "type": "Section", 
+          "children": [
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "Paragraph", 
+                  "children": [
+                    {
+                      "type": "List", 
+                      "children": [
+                        {
+                          "type": "ListItem", 
+                          "children": [
+                            {
+                              "type": "TextBlock", 
+                              "children": [
+                                {
+                                  "type": "Link", 
+                                  "properties": {
+                                    "alias": "Stacks"
+                                  }, 
+                                  "value": "http://quasipartikel.at/unveil/examples/stacks.html"
+                                }
+                              ], 
+                              "value": null
+                            }
+                          ], 
+                          "value": null
+                        }, 
+                        {
+                          "type": "ListItem", 
+                          "children": [
+                            {
+                              "type": "TextBlock", 
+                              "children": [
+                                {
+                                  "type": "Link", 
+                                  "properties": {
+                                    "alias": "Random Bars"
+                                  }, 
+                                  "value": "http://quasipartikel.at/unveil/examples/random_bars.html"
+                                }
+                              ], 
+                              "value": null
+                            }
+                          ], 
+                          "value": null
+                        }, 
+                        {
+                          "type": "ListItem", 
+                          "children": [
+                            {
+                              "type": "TextBlock", 
+                              "children": [
+                                {
+                                  "type": "Link", 
+                                  "properties": {
+                                    "alias": "Multiple displays"
+                                  }, 
+                                  "value": "http://quasipartikel.at/unveil/examples/multiple_displays.html"
+                                }
+                              ], 
+                              "value": null
+                            }
+                          ], 
+                          "value": null
+                        }
+                      ], 
+                      "value": null
+                    }
+                  ], 
+                  "value": null
+                }
+              ], 
+              "value": null
+            }
+          ], 
+          "value": "Examples", 
+          "properties": {
+            "level": 2
+          }
+        }, 
+        {
+          "type": "Section", 
+          "children": [
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "The Scene API related code is pretty small (~\u00a0400 LOC). I don't plan to provide a full-featured graphic library with helper functions, since there are existing libraries, that do a perfect job. I recommend using Protovis along with the Scene API. Actually, this library was created because Protovis does not support the canvas element. I also wanted an easier way to deal with interaction."
+                    }
+                  ], 
+                  "value": null
+                }
+              ], 
+              "value": null
+            }, 
+            {
+              "type": "Paragraph", 
+              "children": [
+                {
+                  "type": "TextBlock", 
+                  "children": [
+                    {
+                      "type": "Text", 
+                      "value": "To prevent from verbose and messy code, I do not provide any backward compatibility for older browsers. I'm trying to stay on the edge of technology. Therefore I focus on supporting the most recent versions of Google Chrome, Firefox, Safari. I'll probably support Internet Explorer 9 as well, since their Canvas implementation looks promising. Currently mouse interaction is not working in Firefox. Please use a webkit-based browser for the moment."
                     }
                   ], 
                   "value": null
@@ -1540,7 +2828,18 @@
               "children": [
                 {
                   "type": "Text", 
-                  "value": "The Node API heavily relies on SortedHash, please have a look at the documentation before you start."
+                  "value": "The Node API heavily relies on "
+                }, 
+                {
+                  "type": "Text", 
+                  "properties": {
+                    "emph": true
+                  }, 
+                  "value": "SortedHash"
+                }, 
+                {
+                  "type": "Text", 
+                  "value": ", please have a look at the documentation before you start."
                 }
               ], 
               "value": null
@@ -1666,7 +2965,18 @@
               "children": [
                 {
                   "type": "Text", 
-                  "value": "Unveil.js features a `SortedHash` data structure that provides a simple layer of abstraction for managing Sorted Hashes in JavaScript. It's heavily used throughout the framework."
+                  "value": "Unveil.js features a "
+                }, 
+                {
+                  "type": "Text", 
+                  "properties": {
+                    "emph": true
+                  }, 
+                  "value": "SortedHash"
+                }, 
+                {
+                  "type": "Text", 
+                  "value": " data structure that provides a simple layer of abstraction for managing Sorted Hashes in JavaScript. It's heavily used throughout the framework."
                 }
               ], 
               "value": null
@@ -1704,6 +3014,9 @@
                   "children": [
                     {
                       "type": "Text", 
+                      "properties": {
+                        "strong": true
+                      }, 
                       "value": "Hash Semantics:"
                     }
                   ], 
@@ -1718,6 +3031,9 @@
                   "children": [
                     {
                       "type": "Text", 
+                      "properties": {
+                        "strong": true
+                      }, 
                       "value": "Array Semantics:"
                     }
                   ], 
@@ -1747,6 +3063,9 @@
                   "children": [
                     {
                       "type": "Text", 
+                      "properties": {
+                        "strong": true
+                      }, 
                       "value": "each:"
                     }
                   ], 
@@ -1761,6 +3080,9 @@
                   "children": [
                     {
                       "type": "Text", 
+                      "properties": {
+                        "strong": true
+                      }, 
                       "value": "eachKey:"
                     }
                   ], 
@@ -1790,6 +3112,9 @@
                   "children": [
                     {
                       "type": "Text", 
+                      "properties": {
+                        "strong": true
+                      }, 
                       "value": "sort:"
                     }
                   ], 
@@ -1810,6 +3135,9 @@
                   "children": [
                     {
                       "type": "Text", 
+                      "properties": {
+                        "strong": true
+                      }, 
                       "value": "map:"
                     }
                   ], 
@@ -1840,6 +3168,9 @@
                   "children": [
                     {
                       "type": "Text", 
+                      "properties": {
+                        "strong": true
+                      }, 
                       "value": "select:"
                     }
                   ], 
@@ -1860,6 +3191,9 @@
                   "children": [
                     {
                       "type": "Text", 
+                      "properties": {
+                        "strong": true
+                      }, 
                       "value": "intersect:"
                     }
                   ], 
@@ -1880,6 +3214,9 @@
                   "children": [
                     {
                       "type": "Text", 
+                      "properties": {
+                        "strong": true
+                      }, 
                       "value": "union:"
                     }
                   ], 
@@ -1894,6 +3231,9 @@
                   "children": [
                     {
                       "type": "Text", 
+                      "properties": {
+                        "strong": true
+                      }, 
                       "value": "Method chaining:"
                     }
                   ], 

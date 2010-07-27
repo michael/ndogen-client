@@ -2341,7 +2341,7 @@ var unveil_fixture = {
                   "children": [
                     {
                       "type": "Text", 
-                      "value": "Suche commands are a powerful abstraction for modifying state. Implement your own commands whenever it makes sense."
+                      "value": "Such commands are a powerful abstraction for modifying state. Implement your own commands whenever it makes sense."
                     }
                   ], 
                   "value": null
