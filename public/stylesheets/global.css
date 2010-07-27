@@ -21,6 +21,8 @@ p { margin: 0 0 15px 0; }
 h1, h2, h3, h4, h5, h6 {  margin: 40px 0 15px 0; }
 h3, h4, h5, h6 { margin-top: 20px; }
 
+em { background: #eee; padding: 3px;}
+
 
 #content {
   background: #fff;
@@ -107,6 +109,19 @@ div.documents div.document .meta { position: absolute; bottom: 0px;  color: #888
 }
 
 #hud a { color: white; }
+
+
+/*---------------------- HiJs Syntax Highlighting -------------------------*/
+
+
+code .keyword              { color: #954121; }
+code .string, code .regexp { color: #219161 }
+/*code .class, code .special { font-weight: bold; }*/
+/*code .number               { color: pink }*/
+code .comment              { color: #888 }
+
+
+
 
 /*---------------------- Syntax Highlighting -----------------------------*/
 td.linenos { background-color: #f0f0f0; padding-right: 10px; }

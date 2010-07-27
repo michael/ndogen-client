@@ -33,6 +33,7 @@ var ndogen = $.sammy(function() {
       document.title = did;
       
       $('#toc').html(app.doc.renderSection());
+      hijs('code');
       
     });
   });

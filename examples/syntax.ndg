@@ -115,10 +115,12 @@ $ _Single underscores_ or *single asterisks*
 Strong text
 -----------------------------------------------------------------
 
-$ _Double underscores_ or *double asterisks*
+$ __Double underscores__ or **double asterisks**
 
 
 Inline Code
 -----------------------------------------------------------------
 
 $ You can create an instance with `new Person()`
+
+
