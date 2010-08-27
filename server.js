@@ -1,13 +1,12 @@
 var sys = require('sys'),
     fs = require('fs'),
     http = require('http'),
-    Connect = require('connect'),
+    connect = require('connect'),
     setup = require('./conf/setup');
 
 
 // Data (will be backed by Redis soon)
 // ============================================================================
-
 
 
 
@@ -19,7 +18,7 @@ function document(app) {
   // List
   // --------------------------------------------------------------------------
   
-  app.get('/', function(req, res, params){
+  app.get('/documents', function(req, res, next){
       var body;
       
       body = JSON.stringify(setup.documents);
@@ -33,13 +32,13 @@ function document(app) {
   
   // Show
   // --------------------------------------------------------------------------
-  app.get('/:id/:op?', function(req, res, params) {
-      if (!setup.documents[params.id])
+  app.get('/documents/:id', function(req, res, next) {
+      if (!setup.documents[req.params.id])
         return;
-    
-      var host = setup.documents[params.id].host,
-          port = setup.documents[params.id].port || 80,
-          path = setup.documents[params.id].path;
+          
+      var host = setup.documents[req.params.id].host,
+          port = setup.documents[req.params.id].port || 80,
+          path = setup.documents[req.params.id].path;
       
       // document knowledge is in the cloud
       var service = http.createClient(port, host);
@@ -58,10 +57,10 @@ function document(app) {
   });
 }
 
-var Server = module.exports = Connect.createServer(
-  Connect.staticProvider(__dirname + '/public'),
-  Connect.logger()
+var server = connect.createServer(
+  connect.logger(),
+  connect.router(document),
+  connect.staticProvider(__dirname + '/public')
 );
 
-// plug in modules here
-Server.use("/documents/", Connect.router(document));
+server.listen(3000);
